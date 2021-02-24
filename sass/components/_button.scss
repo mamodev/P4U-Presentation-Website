@@ -1,5 +1,5 @@
 .button-group {
-    flex: 0 1 25%;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,5 +53,56 @@
 }
 
 .button-text {
+    width: max-content;
+    transition: all .2s;
+    
 
+    &__btn {
+        width: max-content;
+        display: inline-block;
+        text-decoration: none;
+        padding: .8rem 1rem;
+        font-size: 2rem;
+        font-weight: 100;
+        
+        border: none;
+        cursor: pointer;
+        transition: all .2s;
+    
+        background-color: transparent;
+        color: $color-primary-one-1;
+        
+
+        &--left + hr, &--left {
+            clear: left;
+        }
+
+        &--right + hr, &--left {
+            clear: right;
+        }
+
+        &--center + hr, &--left {
+            margin: auto;
+        }
+
+        & + hr {
+            width: 70%;
+            border: transparent {
+                top: 1px solid $color-primary-one-1;
+            };
+        }
+
+        &:focus {
+            outline: none;
+            animation: pulsateBtn 1s infinite;
+        }
+
+        &:focus ~ hr {
+            animation: pulsateBtn 1s infinite;
+        }
+    }
+    
+    &:hover {
+        transform: scale(1.1);
+    }
 }

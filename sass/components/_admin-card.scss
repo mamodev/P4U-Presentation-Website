@@ -14,10 +14,12 @@
         margin: auto;
         overflow: hidden;
         position: relative;
+        border-radius: 50%;
 
         @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
             -webkit-clip-path: circle(50% at 50% 50%);
             clip-path: circle(50% at 50% 50%);
+            border-radius: none;
         }
     }
 
