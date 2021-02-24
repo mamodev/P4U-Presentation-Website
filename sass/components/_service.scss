@@ -1,0 +1,55 @@
+.service {
+    $padding-right: 1rem;
+    $padding-top: 2.7rem;
+    $padding-bottom: 0rem;
+    $padding-left: 3.5rem;
+
+    flex: 0 1 17%;
+    height: 40rem;
+    background-color: $color-white;
+    
+    box-shadow: .2rem .1rem 3rem rgba($color-primary-one-1, .4);
+    cursor: pointer;
+    transition: all .3s;
+
+    &__title {
+        padding-top: $padding-top;
+    }
+
+    &__content {
+        margin-top: 1.5rem;
+        height: 100%;
+        padding: calc(#{$padding-top} - #{$padding-top})
+        $padding-right $padding-bottom $padding-left;
+    }
+
+    &__description {
+        height: 100%;
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        line-height: 3.2rem;
+        margin-top: 1rem;
+    }
+
+    &__icon {
+        width: 15rem;
+        height: 35rem;
+        float: right;   
+
+        @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+            -webkit-shape-outside: polygon(0 27%, 100% 27%, 100% 100%, 0 100%);
+            shape-outside: polygon(0 27%, 100% 27%, 100% 100%, 0 100%);
+        }
+    }
+
+    &__img {
+        height: 75%;
+        width: 110%;
+        transform: translate(3rem, 9rem);
+    }
+
+    &:hover {
+        box-shadow: .2rem .1rem 5rem rgba($color-primary-one-1, .5);
+        transform: translateY(-.5rem) scale(1.05);
+    }
+}

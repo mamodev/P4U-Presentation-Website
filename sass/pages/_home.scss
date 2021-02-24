@@ -1,0 +1,32 @@
+.section-service {
+    
+    &__group {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+.section-about-us {
+    position: relative;
+
+    &__background {
+        position: absolute;
+        width: 100%;
+        height: 40rem;
+        top: 22rem;
+        left: 0;
+        z-index: -1;
+        background-color: $color-primary-one-1;
+        box-shadow: .2rem .1rem 4rem rgba($color-primary-one-1, .2);
+    }
+    
+    &__card-group {
+        height: 55rem;
+        overflow-x: scroll;
+        padding-left: 5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

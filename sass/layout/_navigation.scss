@@ -1,0 +1,113 @@
+.navigation {
+    width: 100%;
+    height: 9rem;
+    background-color: $color-background-2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: .2rem .1rem 3rem rgba($color-primary-one-1, .4);
+    padding: 0rem 3rem;
+    position: fixed;
+    top: 3rem;
+    right: 0rem;
+    z-index: 5000;
+
+    &__logo {
+        flex: 0 1 33.3%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    &__image {
+        height: 100%;
+        width: auto;
+    }
+
+    &__caption {
+        width: 12rem;
+        line-height: 1.5rem;
+        font-size: .8rem;
+        font-weight: 600;
+        letter-spacing: .1rem;
+
+        &--1 {
+            display: inline-block;
+            color: $color-secondary-one-1;
+        }
+
+        &--2 {
+            display: inline-block;
+            color: $color-primary-one-1;
+        }
+
+        &--3 {
+            display: inline-block;
+            color: $color-secondary-two-1;
+        }
+    }
+
+    &__nav {
+        flex: 0 1 66.6%;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        align-items: center;
+    }
+
+    &__item {
+        padding: 1.5rem 3.2rem;
+        position: relative;
+        cursor: pointer;
+        transition: all .2s;
+        letter-spacing: .3rem;
+    }
+
+    &__item:hover {
+        box-shadow: .2rem .5rem 1rem 
+                    rgba($color-primary-one-1, .4);
+        transform: scale(1.1);
+    }
+
+    &__item:hover > &__link {
+        color: $color-white;
+    }
+
+    &__item::before {
+        content: "";
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        height: 100%;
+        width: 0;
+        z-index: 0;
+        background-color: $color-secondary-two-1;
+        transform: scaleY(0);
+        transition: transform .2s, 
+                    width .3s cubic-bezier(1,0,0,1) .15s,
+                    background-color .1s;
+    }
+
+    &__item:hover::before {
+        transform: scaleY(1);
+        width: 100%;
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            position: relative;
+            font-size: $normal-button-font-size;
+            font-weight: 600;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $color-primary-one-1;
+            z-index: 1000;
+
+            transition: all .3s;
+        }
+    }
+}

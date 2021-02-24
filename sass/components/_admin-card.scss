@@ -1,0 +1,124 @@
+.admin-card {
+    $time-animation: .5s;
+    
+    flex: 0 1 15%;
+    background-color: $color-primary-one-1;
+    padding: 3rem;
+    margin-right: 10rem;
+    //box-shadow: .2rem .1rem 4rem rgba($color-primary-one-1, .2);
+    transition: all $time-animation;
+    cursor: pointer;
+
+    &__avatar {
+        width: 15rem;
+        height: 15rem;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+
+        @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+            -webkit-clip-path: circle(50% at 50% 50%);
+            clip-path: circle(50% at 50% 50%);
+        }
+    }
+
+    &__image {
+        height: 100%;
+        width: 100%;
+        transform: scale(1.2);
+        backface-visibility: hidden;
+        transition: all $time-animation;
+    }
+
+    &__caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 20%);
+        color: $color-white;
+        font-size: 1.7rem;
+        opacity: 0;
+        transition: all $time-animation;
+        backface-visibility: hidden;
+    }
+
+    &__content {
+        width: 18rem;
+        margin: auto {
+            top: 2rem;
+        };
+    }
+
+    &__name {
+        font-size: 2rem;
+        font-weight: 600;
+        color: $color-background-2;
+
+        & + hr {
+            margin: auto {
+                top: 1rem;
+            };
+            width: 65%;
+            border: transparent {
+                top: 1px solid $color-background-2;
+            };
+        }
+    }
+
+    &__intro {
+        font-size: 1rem;
+        font-weight: 300;
+        letter-spacing: 2px;
+        line-height: 1.5rem;
+        margin-top: .8rem;
+        color: $color-background-2;
+    }
+
+    &__link {
+        text-align: center;
+        margin: auto {
+            top: 2rem;
+        };
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__icon {
+        width: 2rem;
+        height: 2rem;
+        margin-right: 1.2rem;
+        fill: $color-background-2;
+    }
+
+    &__nickname {
+        &:link,
+        &:visited {
+            font-size: 1.5rem;
+            font-weight: 600;
+            text-decoration: none;
+            color: $color-background-2;
+            transition: all .3s;
+        }
+
+        &:hover,
+        &:active {
+            font-size: 1.7rem;
+        }
+    }
+
+    &:hover {
+        transform: scale(1.3);
+        box-shadow: 1rem .1rem 4rem rgba($color-black, .3);
+    }
+
+    &:hover &__caption {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+
+    &:hover &__image {
+        transform: scale(1);
+        filter: blur(3px) brightness(80%);
+    }
+}

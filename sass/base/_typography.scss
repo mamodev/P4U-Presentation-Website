@@ -1,0 +1,76 @@
+body {
+    font: {
+        family: "Montserrat", sans-serif;
+        weight: 500;
+        height: 1.7;
+    }
+    color: $color-primary-one-1;
+}
+
+.heading-secondary {
+    position: relative;
+    z-index: 1;
+    $time-animation: .4s;
+
+    max-width: 80%;
+    margin: auto;
+
+    hr {
+        margin: auto {
+            top: 1rem
+        };
+        width: 20%;
+        border: 1px solid $color-primary-one-1;
+    }
+
+    &--title {
+        width: max-content;
+        margin: auto;
+        font-size: $large-title-font-size;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-weight: 600;
+        transition: font-size $time-animation;
+    }
+
+    &--animated {
+        & + hr {
+            margin: auto {
+                top: 1rem
+            };
+            width: 0px;
+            height: 0px;
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s, 
+                        opacity .1s linear, 
+                        width $time-animation;
+            border: 1px solid $color-primary-one-1;
+        }
+        
+        &:hover {
+            font-size: calc(#{$large-title-font-size} + .5rem);
+        }
+    
+        &:hover + hr {
+            visibility: visible;
+            opacity: 1;
+            width: 30%;
+        }
+    }
+
+    &--text {
+        font-size: calc(#{$large-title-font-size} - 1.3rem);
+        line-height: 2.7rem;
+        letter-spacing: 1px;
+        width: 60%;
+        margin: auto;
+    }
+
+}
+
+.heading-tertiary {
+    font-size: $normal-title-font-size;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
