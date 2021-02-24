@@ -39,18 +39,18 @@ body {
     letter-spacing: 2px;
     text-transform: uppercase;
     font-weight: 600;
-    transition: font-size 0.4s; }
+    transition: all 0.4s; }
   .heading-secondary--animated + hr {
     margin: auto;
       margin-top: 1rem;
     width: 0px;
-    height: 0px;
+    height: 1px;
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s, opacity 0.1s linear, width 0.4s;
     border: 1px solid #4E5169; }
   .heading-secondary--animated:hover {
-    font-size: calc(3rem + .5rem); }
+    transform: scale(1.15); }
   .heading-secondary--animated:hover + hr {
     visibility: visible;
     opacity: 1;
@@ -74,7 +74,7 @@ body {
   margin-left: 1.5rem !important; }
 
 .u-margin-left-small {
-  margin-left: 2.5rem !important; }
+  margin-left: 3rem !important; }
 
 .u-margin-left-medium {
   margin-left: 5rem !important; }
@@ -92,7 +92,7 @@ body {
   margin-right: 1.5rem !important; }
 
 .u-margin-right-small {
-  margin-right: 2.5rem !important; }
+  margin-right: 3rem !important; }
 
 .u-margin-right-medium {
   margin-right: 5rem !important; }
@@ -110,7 +110,7 @@ body {
   margin-bottom: 1.5rem !important; }
 
 .u-margin-bottom-small {
-  margin-bottom: 2.5rem !important; }
+  margin-bottom: 3rem !important; }
 
 .u-margin-bottom-medium {
   margin-bottom: 5rem !important; }
@@ -128,7 +128,7 @@ body {
   margin-top: 1.5rem !important; }
 
 .u-margin-top-small {
-  margin-top: 2.5rem !important; }
+  margin-top: 3rem !important; }
 
 .u-margin-top-medium {
   margin-top: 5rem !important; }
@@ -181,7 +181,7 @@ body {
   flex: 0 1 15%;
   background-color: #4E5169;
   padding: 3rem;
-  margin-right: 10rem;
+  margin-right: 11rem;
   transition: all 0.5s;
   cursor: pointer; }
   .admin-card__avatar {
@@ -308,9 +308,9 @@ body {
   align-items: center;
   box-shadow: 0.2rem 0.1rem 3rem rgba(78, 81, 105, 0.4);
   padding: 0rem 3rem;
-  position: fixed;
-  top: 3rem;
-  right: 0rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0rem;
   z-index: 5000; }
   .navigation__logo {
     flex: 0 1 33.3%;

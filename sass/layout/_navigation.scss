@@ -7,9 +7,10 @@
     align-items: center;
     box-shadow: .2rem .1rem 3rem rgba($color-primary-one-1, .4);
     padding: 0rem 3rem;
-    position: fixed;
-    top: 3rem;
-    right: 0rem;
+    
+    position: -webkit-sticky;
+	position: sticky;
+	top: 0rem;
     z-index: 5000;
 
     &__logo {
