@@ -1,4 +1,4 @@
-
+// ----------- BTN-TEXT ANIMATION AFTER CLICK ---------
 @keyframes pulsateBtn {
     0% {
         transform: scale(1);
@@ -7,7 +7,7 @@
 
     50% {
         transform: scale(1.1);
-        box-shadow: 0 1rem 4rem rgba(0,0,0,.25);
+        box-shadow: $shadow-xsmall-black;
     }
 
     100% {
@@ -15,3 +15,76 @@
         box-shadow: none;
     }
 }
+// ----------- BTN-TEXT ANIMATION AFTER CLICK ---------
+
+
+
+// ----------- ANIMATION MOVE FROM RIGHT TO LEFT ---------
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    80% {
+        transform: translateX(1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+        
+    }
+}
+
+.animated-left { 
+    animation: moveInLeft .5s ease-out .75s;
+    animation-fill-mode: backwards;
+}
+// ----------- ANIMATION MOVE FROM RIGHT TO LEFT ---------
+
+
+
+// ----------- ANIMATION MOVE FROM LEFT RO RIGHT ---------
+@keyframes moveInRight{
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+
+    80% {
+        transform: translateX(-1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.animated-right { 
+    animation: moveInRight .5s ease-out .75s;
+    animation-fill-mode: backwards;
+}
+// ----------- ANIMATION MOVE FROM LEFT RO RIGHT ---------
+
+
+
+// ----------- ANIMATION MOVE FROM TOP TO BOTTOM ---------
+@keyframes moveInBottom{
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.animated-bottom { 
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
+}
+// ----------- ANIMATION MOVE FROM TOP TO BOTTOM ---------

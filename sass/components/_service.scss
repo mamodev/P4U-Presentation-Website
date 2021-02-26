@@ -1,14 +1,16 @@
 .service {
+    // ----------- PADDING SIZE ---------
     $padding-right: 1rem;
     $padding-top: 2.7rem;
     $padding-bottom: 0rem;
     $padding-left: 3.5rem;
+    // ----------- PADDING SIZE ---------
 
     flex: 0 1 17%;
     height: 40rem;
     background-color: $color-white;
     
-    box-shadow: .2rem .1rem 3rem rgba($color-primary-one-1, .4);
+    box-shadow: $shadow-normal-black;
     cursor: pointer;
     transition: all .3s;
 
@@ -25,7 +27,7 @@
 
     &__description {
         height: 100%;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         letter-spacing: 1px;
         line-height: 3.2rem;
         margin-top: 1rem;
@@ -49,7 +51,7 @@
     }
 
     &:hover {
-        box-shadow: .2rem .1rem 5rem rgba($color-primary-one-1, .5);
+        box-shadow: $shadow-xlarge-black;
         transform: translateY(-.5rem) scale(1.05);
     }
 }

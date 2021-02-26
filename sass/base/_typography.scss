@@ -60,7 +60,7 @@ body {
     }
 
     &--text {
-        font-size: calc(#{$large-title-font-size} - 1.3rem);
+        font-size: calc(#{$large-title-font-size} - 1.8rem);
         line-height: 2.7rem;
         letter-spacing: 1px;
         width: 60%;
@@ -72,5 +72,8 @@ body {
 .heading-tertiary {
     font-size: $normal-title-font-size;
     font-weight: 600;
-    letter-spacing: 1.5px;
+
+    &--yellow {
+        color: $color-primary-two-1;
+    }
 }

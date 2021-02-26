@@ -1,5 +1,6 @@
 .section-service {
-    
+    width: 95%;
+    margin: auto;
     &__group {
         display: flex;
         justify-content: space-around;
@@ -18,7 +19,7 @@
         left: 0;
         z-index: -1;
         background-color: $color-primary-one-1;
-        box-shadow: .2rem .1rem 4rem rgba($color-black , .4);
+        box-shadow: $shadow-normal-black;
     }
     
     &__card-group {
@@ -27,6 +28,25 @@
         padding-left: 5rem;
         display: flex;
         justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.section-overview {
+    width: 100%;
+    height: 300rem;
+    background-repeat: no-repeat;
+    background-image: url(../img/backgroundN1.png);
+    overflow: hidden;
+    padding: 0rem {
+        top: 25rem
+    };
+
+    &__list {
+        height: 83%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         align-items: center;
     }
 }

@@ -1,0 +1,119 @@
+.overview-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // ----------- OVERVIEW FROM LEFT TO RIGHT ---------
+    &--reverse {flex-direction: row-reverse;}
+
+    &--reverse &__content {
+        padding-right: 0rem;
+        padding-left: 7rem;
+    }
+
+    &--reverse &__video {float: left;}
+
+    &--reverse &__title {float: left;}
+
+    &--reverse &__img {
+        order: 0;
+        margin-left: 0;
+        margin-right: 3rem;
+    }
+
+    &--reverse &__background {left: 4rem;}
+
+    &--reverse &__body {width: auto;}
+
+    &--reverse &__list {width: 90%;}
+    // ----------- OVERVIEW FROM LEFT TO RIGHT ---------
+
+
+    &__presentation {
+        flex: 0 1 50%;
+        align-self: center;
+        position: relative;
+    }
+
+    &__video {
+        border-radius: 3rem;
+        position: relative;
+        z-index: 2;
+        height: 60rem;
+        float: right;
+
+        box-shadow: $shadow-large-black;
+    }
+
+    &__background {
+        height: 100%;
+        width: 40%;
+        position: absolute;
+        top: 4rem;
+        right: 4rem;
+        border-radius: 3rem;
+        z-index: 1;
+
+        box-shadow: $shadow-large-black;
+
+        &--pink {
+            background-color: $color-secondary-two-1;
+        }
+
+        &--blue {
+            background-color: $color-secondary-one-1;
+        }
+
+    }
+
+    &__content {
+        flex: 0 1 70%;
+        padding: 5rem;
+        background-color: $color-secondary-one-4;
+        padding-right: 7rem;
+    }
+
+    &__title {
+        width: 50%;
+        float: right;
+        font-size: 3.1rem;
+        font-weight: 600;
+        line-height: 5rem;
+        letter-spacing: 4px;
+        color: $color-primary-one-1;
+    }
+
+    &__body {
+        float: right;
+        width: 90%;
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 4rem;
+        width: 100%;
+    }
+
+    &__img {
+        order: 1;
+        width: 5rem;
+        height: 5rem;
+        margin-left: 3rem;
+    }
+
+    &__text {
+        width: auto;
+        line-height: 3.7rem;
+        letter-spacing: 2px;
+        font-weight: 400;
+        font-size: 1.7rem;
+        color: $color-primary-one-1;
+    }
+
+}
