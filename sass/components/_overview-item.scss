@@ -26,6 +26,8 @@
     &--reverse &__body {width: auto;}
 
     &--reverse &__list {width: 90%;}
+
+    &--reverse &__overlay {left: -1.7rem;}
     // ----------- OVERVIEW FROM LEFT TO RIGHT ---------
 
 
@@ -35,6 +37,14 @@
         position: relative;
     }
 
+    &__phone {
+        height: max-content;
+        width: max-content;
+        position: relative;
+        
+        
+    }
+
     &__video {
         border-radius: 3rem;
         position: relative;
@@ -42,7 +52,15 @@
         height: 60rem;
         float: right;
 
-        box-shadow: $shadow-large-black;
+        box-shadow: $shadow-xlarge-black;
+    }
+
+    &__overlay {
+        height: 63.5rem;
+        position: absolute;
+        z-index: 3;
+        right: -1.5rem;
+        top: -2rem;
     }
 
     &__background {
@@ -69,7 +87,7 @@
     &__content {
         flex: 0 1 70%;
         padding: 5rem;
-        background-color: $color-secondary-one-4;
+        background-color: $color-white;
         padding-right: 7rem;
     }
 
@@ -85,7 +103,7 @@
 
     &__body {
         float: right;
-        width: 90%;
+        width: 80%;
     }
 
     &__list {
@@ -109,10 +127,10 @@
 
     &__text {
         width: auto;
-        line-height: 3.7rem;
-        letter-spacing: 2px;
-        font-weight: 400;
-        font-size: 1.7rem;
+        line-height: 3.2rem;
+        letter-spacing: 1px;
+        font-weight: 500;
+        font-size: 1.6rem;
         color: $color-primary-one-1;
     }
 

@@ -13,8 +13,8 @@
   0% {
     opacity: 0;
     transform: translateX(-10rem); }
-  80% {
-    transform: translateX(1rem); }
+  50% {
+    transform: translateX(-5rem); }
   100% {
     opacity: 1;
     transform: translate(0); } }
@@ -27,11 +27,11 @@
   0% {
     opacity: 0;
     transform: translateX(10rem); }
-  80% {
-    transform: translateX(-1rem); }
+  50% {
+    transform: translateX(5rem); }
   100% {
     opacity: 1;
-    transform: translate(0); } }
+    transform: translate(0rem); } }
 
 .animated-right {
   animation: moveInRight .5s ease-out .75s;
@@ -457,9 +457,15 @@ body {
     width: auto; }
   .overview-item--reverse .overview-item__list {
     width: 90%; }
+  .overview-item--reverse .overview-item__overlay {
+    left: -1.7rem; }
   .overview-item__presentation {
     flex: 0 1 50%;
     align-self: center;
+    position: relative; }
+  .overview-item__phone {
+    height: max-content;
+    width: max-content;
     position: relative; }
   .overview-item__video {
     border-radius: 3rem;
@@ -467,7 +473,13 @@ body {
     z-index: 2;
     height: 60rem;
     float: right;
-    box-shadow: 0.2rem 1rem 4rem rgba(0, 0, 0, 0.4); }
+    box-shadow: 0.2rem 0.1rem 5rem rgba(0, 0, 0, 0.5); }
+  .overview-item__overlay {
+    height: 63.5rem;
+    position: absolute;
+    z-index: 3;
+    right: -1.5rem;
+    top: -2rem; }
   .overview-item__background {
     height: 100%;
     width: 40%;
@@ -484,7 +496,7 @@ body {
   .overview-item__content {
     flex: 0 1 70%;
     padding: 5rem;
-    background-color: #A4D3E6;
+    background-color: #fff;
     padding-right: 7rem; }
   .overview-item__title {
     width: 50%;
@@ -496,7 +508,7 @@ body {
     color: #4E5169; }
   .overview-item__body {
     float: right;
-    width: 90%; }
+    width: 80%; }
   .overview-item__list {
     list-style: none; }
   .overview-item__item {
@@ -512,10 +524,10 @@ body {
     margin-left: 3rem; }
   .overview-item__text {
     width: auto;
-    line-height: 3.7rem;
-    letter-spacing: 2px;
-    font-weight: 400;
-    font-size: 1.7rem;
+    line-height: 3.2rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 1.6rem;
     color: #4E5169; }
 
 .navigation {
