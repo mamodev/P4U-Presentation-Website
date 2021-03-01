@@ -20,7 +20,6 @@
 <body>
     <!-- ---------------- NAVIGAGION (NAVBAR) ---------------- -->
     <div class="navigation u-margin-top-small">
-
         <!-- ------------- Logo left with text ------------- -->
         <figure class="navigation__logo">
             <img src="img/logo2_icon.png" alt="Logo" class="navigation__image">
@@ -35,9 +34,9 @@
         <!-- ------------- Navigation + Button ------------- -->
         <nav class="navigation__nav">
             <ul class="navigation__list">
-                <li class="navigation__item"><a href="#" class="navigation__link">Homepage</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Home</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link">Chi siamo?</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">Comunity</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Community</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link">Articoli</a></li>
                 <li class="button-group">
                     <button class="button-round button-round--normal button-round--blue ">Log In</button>
@@ -49,26 +48,30 @@
     </div>
     <!-- ---------------- NAVIGAGION (NAVBAR) ---------------- -->
 
-    <!-- ---------------- WORK IN PROGRESS ---------------- --><!--
+    <!-- ---------------- HEADER (HEADER) ---------------- -->
     <header class="header">
-        <div class="header__logo">
-            <img src="" alt="Img" class="header__img">
+        <div class="header__illustration">
+            <img src="img/Illustrazione_home_new.png" alt="image" class="header__img"></img>
         </div>
         <div class="header__content">
-            <h1 class="header__title">
-                Porta la tua <span class="header__title--right">idea</span>
-                In alto <span class="header__title--left">insieme</span> a noi
+            <figure class="header__logo">
+                <img src="img/logo_razzo3.png" alt="Logo" class="header__figure"></img>
+                <figcaption class="header__caption">Project4U</figcaption>
+            </figure>
+            <h1 class="header__title u-right-text">
+                Porta la <span class="header__title--right">tua idea</span><br>
+                In alto<br><span class="header__title--left">insieme</span> a noi
             </h1>
-            <div class="button-group u-margin-top-large">
-                <button class="button-round button-round--shadow button-round--big button-round--pink">Scopri altre funzionalità</button>
-            </div>
+            <button class="button-round button-round--shadow 
+            button-round--ultra button-round--yellow 
+            u-margin-top-medium">Scopri altre funzionalità</button>
         </div>
     </header>
-    --><!-- ---------------- WORK IN PROGRESS ---------------- -->
+    <!-- ---------------- HEADER (HEADER) ---------------- -->
  
     <main>
         <!-- ---------------- SECTION SERVICE (SERVICE) ---------------- -->
-        <section class="section-service u-margin-top-large u-margin-bottom-xxlarge">
+        <section class="section-service u-margin-bottom-xlarge">
             
             <!-- ------------- Section title ------------- -->
             <div class="heading-secondary u-center-text u-margin-bottom-big">
@@ -77,7 +80,7 @@
             </div>
             <!-- ------------- Section title ------------- -->
 
-            <div class="section-service__group u-margin-top-medium">
+            <div class="section-service__group u-margin-top-large">
                 <!-- ------------- SERVICE ------------- -->
                 <div class="service">
                     <!-- ------------- service title ------------- -->
@@ -86,16 +89,16 @@
                     </div>
                     <!-- ------------- service title ------------- -->
 
-                    <!-- ------------- contet + lateral image ------------- -->
+                    <!-- ------------- image ------------- -->
                     <div class="service__content">
-                        <div class="service__icon">
-                            <img src="img/image-prova-1.jpg" alt="Image 1" class="service__img">
-                        </div>
-                        <p class="service__description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i lorem ipsum dolor sit amet
-                        </p>
+                        <svg class="service__img service__img--user">
+                            <use xlink:href="img/symbol-defs.svg#icon-user"></use>
+                        </svg>
+                        <svg class="service__img service__img--search">
+                            <use xlink:href="img/symbol-defs.svg#icon-search"></use>
+                        </svg>
                     </div>
-                    <!-- ------------- contet + lateral image ------------- -->
+                    <!-- ------------- image ------------- -->
                 </div>
                 <!-- ------------- SERVICE ------------- -->
 
@@ -103,20 +106,20 @@
                 <div class="service">
                     <!-- ------------- service title ------------- -->
                     <div class="service__title u-center-text">
-                        <h2 class="heading-tertiary">Cerca Persone</h2>
+                        <h2 class="heading-tertiary">Cerca Progetti</h2>
                     </div>
                     <!-- ------------- service title ------------- -->
 
-                    <!-- ------------- contet + lateral image ------------- -->
+                    <!-- ------------- image ------------- -->
                     <div class="service__content">
-                        <div class="service__icon">
-                            <img src="img/image-prova-1.jpg" alt="Image 1" class="service__img">
-                        </div>
-                        <p class="service__description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i lorem ipsum dolor sit amet
-                        </p>
+                        <svg class="service__img service__img--users">
+                            <use xlink:href="img/symbol-defs.svg#icon-users"></use>
+                        </svg>
+                        <svg class="service__img service__img--search">
+                            <use xlink:href="img/symbol-defs.svg#icon-search"></use>
+                        </svg>
                     </div>
-                    <!-- ------------- contet + lateral image ------------- -->
+                    <!-- ------------- image ------------- -->
                 </div>
                 <!-- ------------- SERVICE ------------- -->
 
@@ -124,20 +127,20 @@
                 <div class="service">
                     <!-- ------------- service title ------------- -->
                     <div class="service__title u-center-text">
-                        <h2 class="heading-tertiary">Cerca Persone</h2>
+                        <h2 class="heading-tertiary">Gestione Progetti</h2>
                     </div>
                     <!-- ------------- service title ------------- -->
 
-                    <!-- ------------- contet + lateral image ------------- -->
+                    <!-- ------------- image ------------- -->
                     <div class="service__content">
-                        <div class="service__icon">
-                            <img src="img/image-prova-1.jpg" alt="Image 1" class="service__img">
-                        </div>
-                        <p class="service__description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i lorem ipsum dolor sit amet
-                        </p>
+                        <svg class="service__img service__img--user-tie">
+                            <use xlink:href="img/symbol-defs.svg#icon-user-tie"></use>
+                        </svg>
+                        <svg class="service__img service__img--cogs">
+                            <use xlink:href="img/symbol-defs.svg#icon-cogs"></use>
+                        </svg>
                     </div>
-                    <!-- ------------- contet + lateral image ------------- -->
+                    <!-- ------------- image ------------- -->
                 </div>
                 <!-- ------------- SERVICE ------------- -->
 
@@ -145,20 +148,20 @@
                 <div class="service">
                     <!-- ------------- service title ------------- -->
                     <div class="service__title u-center-text">
-                        <h2 class="heading-tertiary">Cerca Persone</h2>
+                        <h2 class="heading-tertiary">Articoli Informativi</h2>
                     </div>
                     <!-- ------------- service title ------------- -->
 
-                    <!-- ------------- contet + lateral image ------------- -->
+                    <!-- ------------- image ------------- -->
                     <div class="service__content">
-                        <div class="service__icon">
-                            <img src="img/image-prova-1.jpg" alt="Image 1" class="service__img">
-                        </div>
-                        <p class="service__description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i lorem ipsum dolor sit amet
-                        </p>
+                        <svg class="service__img service__img--book">
+                            <use xlink:href="img/symbol-defs.svg#icon-book"></use>
+                        </svg>
+                        <svg class="service__img service__img--pencil">
+                            <use xlink:href="img/symbol-defs.svg#icon-pencil"></use>
+                        </svg>
                     </div>
-                    <!-- ------------- contet + lateral image ------------- -->
+                    <!-- ------------- image ------------- -->
                 </div>
                 <!-- ------------- SERVICE ------------- -->
             </div>
@@ -166,7 +169,7 @@
         <!-- ---------------- SECTION SERVICE (SERVICE) ---------------- -->
 
         <!-- ---------------- SECTION OVERVIEW (OVERVIEW-ITEM) ---------------- -->
-        <section class="section-overview u-margin-bottom-xlarge">
+        <section class="section-overview u-margin-bottom-large">
             <div class="section-overview__list">
 
                 <!-- ------------- OVERVIEW-ITEM ------------- -->
@@ -356,6 +359,68 @@
 
                 </div>
                 <!-- ------------- OVERVIEW-ITEM ------------- -->
+
+                <!-- ------------- OVERVIEW-ITEM ------------- -->
+                <div class="overview-item overview-item--reverse animated-left">
+                    <!-- ------------- OverView video with background ------------- -->
+                    <div class="overview-item__presentation">
+                        <div class="overview__phone">
+                            <video class="overview-item__video" autoplay muted loop>
+                                <source src="img/video-prova.mp4" type="video/mp4">
+                                <source src="" type="video/webm">
+                                Your browser is not supported!
+                            </video>
+                            <img src="img/phone_overlay.png" alt="overlay" class="overview-item__overlay">
+                        </div>
+                        <div class="overview-item__background overview-item__background--blue">&nbsp;</div>
+                    </div>
+                    <!-- ------------- OverView video with background ------------- -->
+
+                    <!-- ------------- OverView content (list) ------------- -->
+                    <div class="overview-item__content">
+                        <h3 class="overview-item__title u-left-text">
+                            Seleziona il settore che più ti interessa
+                        </h3>
+                        <div class="overview-item__body">
+                            <ul class="overview-item__list">
+                                <!-- ------------- Element in list with custum point (rocket) ------------- -->
+                                <li class="overview-item__item">
+                                    <img src="img/rocket.png" alt="Rocket" class="overview-item__img">
+                                    <p class="overview-item__text u-left-text">
+                                        Lorem ipsum dolor sit amet, consectetur 
+                                        adipiscing elit, sed do eiusmod tempor
+                                        adipiscing elit, sed do eiusmod tempor 
+                                    </p>
+                                </li>
+                                <!-- ------------- Element in list with custum point (rocket) ------------- -->
+
+                                <!-- ------------- Element in list with custum point (rocket) ------------- -->
+                                <li class="overview-item__item">
+                                    <img src="img/rocket.png" alt="Rocket" class="overview-item__img">
+                                    <p class="overview-item__text u-left-text">
+                                        Lorem ipsum dolor sit amet, consectetur 
+                                        adipiscing elit, sed do eiusmod tempor
+                                        adipiscing elit, sed do eiusmod tempor 
+                                    </p>
+                                </li>
+                                <!-- ------------- Element in list with custum point (rocket) ------------- -->
+
+                                <!-- ------------- Element in list with custum point (rocket) ------------- -->
+                                <li class="overview-item__item">
+                                    <img src="img/rocket.png" alt="Rocket" class="overview-item__img">
+                                    <p class="overview-item__text u-left-text">
+                                        Lorem ipsum dolor sit amet, consectetur 
+                                        adipiscing elit, sed do eiusmod tempor
+                                        adipiscing elit, sed do eiusmod tempor 
+                                    </p>
+                                </li>
+                                <!-- ------------- Element in list with custum point (rocket) ------------- -->
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- ------------- OverView content (list) ------------- -->
+                </div>
+                <!-- ------------- OVERVIEW-ITEM ------------- -->
             </div>
 
             <div class="button-group u-margin-top-large">
@@ -365,7 +430,7 @@
         <!-- ---------------- SECTION OVERVIEW (OVERVIEW-ITEM) ---------------- -->
 
         <!-- ---------------- SECTION ABOUT US (ADMIN-CARD) ---------------- -->
-        <section class="section-about-us u-margin-top-xlarge u-margin-bottom-xlarge">
+        <section class="section-about-us u-margin-bottom-xlarge">
 
             <!-- ------------- about us title + description ------------- -->
             <div class="heading-secondary u-center-text u-margin-bottom-big">

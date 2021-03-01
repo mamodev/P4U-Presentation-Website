@@ -1,54 +1,80 @@
 .service {
-    // ----------- PADDING SIZE ---------
-    $padding-right: 1rem;
-    $padding-top: 2.7rem;
-    $padding-bottom: 0rem;
-    $padding-left: 3.5rem;
-    // ----------- PADDING SIZE ---------
-
     flex: 0 1 17%;
-    height: 40rem;
-    background-color: $color-white;
+    height: 37rem;
+    background-color: rgba($color-white, .6);
+    border-radius: 2rem;
     
     box-shadow: $shadow-normal-black;
     cursor: pointer;
     transition: all .3s;
-
-    &__title {
-        padding-top: $padding-top;
-    }
+    padding: 0 2rem;
+    padding-top: 3rem;
 
     &__content {
-        margin-top: 1.5rem;
-        height: 100%;
-        padding: calc(#{$padding-top} - #{$padding-top})
-        $padding-right $padding-bottom $padding-left;
-    }
-
-    &__description {
-        height: 100%;
-        font-size: 1.3rem;
-        letter-spacing: 1px;
-        line-height: 3.2rem;
-        margin-top: 1rem;
-    }
-
-    &__icon {
-        width: 15rem;
-        height: 35rem;
-        float: right;   
-
-        @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-            -webkit-shape-outside: polygon(0 27%, 100% 27%, 100% 100%, 0 100%);
-            shape-outside: polygon(0 27%, 100% 27%, 100% 100%, 0 100%);
-        }
+        width: min-content;
+        position: relative;
+        margin: auto{
+            top: 1rem;
+        };
     }
 
     &__img {
-        height: 75%;
-        width: 110%;
-        transform: translate(3rem, 9rem);
+        fill: $color-primary-one-1;
+
+        &--user {
+            width: 17rem;
+            height: 20rem;
+        }
+
+        &--users{
+            width: 17rem;
+            height: 20rem;
+            transform: translateX(.5rem);
+        }
+
+        &--search {
+            width: 11rem;
+            height: 11rem;
+            stroke: $color-white;
+            stroke-width: 1px;
+            position: absolute;
+            bottom: 1rem;
+            left: .5rem;
+        }
+
+        &--user-tie {
+            width: 17rem;
+            height: 20rem;
+            transform: translateY(.7rem);
+        }
+
+        &--cogs {
+            width: 12rem;
+            height: 12rem;
+            stroke: $color-white;
+            stroke-width: .8px;
+            position: absolute;
+            bottom: -.7rem;
+            right: -1rem;
+        }
+
+        &--book {
+            width: 14rem;
+            height: 18rem;
+            transform: translateY(1rem);
+        }
+
+        &--pencil {
+            width: 10rem;
+            height: 10rem;
+            stroke: $color-white;
+            stroke-width: 1.2px;
+            position: absolute;
+            bottom: -1.5rem;
+            right: -1.2rem;
+        }
     }
+
 
     &:hover {
         box-shadow: $shadow-xlarge-black;

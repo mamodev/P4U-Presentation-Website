@@ -1,6 +1,10 @@
 .section-service {
     width: 95%;
     margin: auto;
+
+    margin-top: 90rem;
+    padding: 0 5rem;
+
     &__group {
         display: flex;
         justify-content: space-around;
@@ -34,19 +38,21 @@
 
 .section-overview {
     width: 100%;
-    height: 300rem;
+    height: 380rem;
     background-repeat: no-repeat;
-    background-image: url(../img/backgroundN1.png);
+    background-image: url(../img/SVG/backgroundN1.svg);
+    background-size: cover;
     overflow: hidden;
     padding: 0rem {
         top: 25rem
     };
 
     &__list {
-        height: 83%;
+        height: 87%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
     }
 }
+

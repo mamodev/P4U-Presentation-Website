@@ -23,7 +23,10 @@
 
     &--reverse &__background {left: 4rem;}
 
-    &--reverse &__body {width: auto;}
+    &--reverse &__body {
+        float: left;
+        width: 80%;
+    }
 
     &--reverse &__list {width: 90%;}
 
@@ -41,8 +44,6 @@
         height: max-content;
         width: max-content;
         position: relative;
-        
-        
     }
 
     &__video {
@@ -120,9 +121,13 @@
 
     &__img {
         order: 1;
-        width: 5rem;
-        height: 5rem;
+        width: 6.5rem;
+        height: 6.5rem;
         margin-left: 3rem;
+        border-radius: 50%;
+        padding: .7rem;
+        border: 2px solid $color-primary-one-1;
+        background-color: $color-background-2;
     }
 
     &__text {
@@ -130,7 +135,7 @@
         line-height: 3.2rem;
         letter-spacing: 1px;
         font-weight: 500;
-        font-size: 1.6rem;
+        font-size: 1.7rem;
         color: $color-primary-one-1;
     }
 

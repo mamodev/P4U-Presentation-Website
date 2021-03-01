@@ -8,7 +8,6 @@
     box-shadow: $shadow-xsmall-black;
     padding: 0rem 3rem;
     
-    position: -webkit-sticky;
 	position: sticky;
 	top: 0rem;
     z-index: 5000;
@@ -26,11 +25,11 @@
     }
 
     &__caption {
-        width: 12rem;
-        line-height: 1.5rem;
-        font-size: .8rem;
+        width: 15rem;
+        line-height: 1.7rem;
+        font-size: 1rem;
         font-weight: 600;
-        letter-spacing: .1rem;
+        letter-spacing: .2rem;
 
         &--1 {
             display: inline-block;

@@ -36,6 +36,12 @@
         font-weight: 600;
     }
 
+    &--ultra {
+        padding: 2.5rem 6rem;
+        font-size: 3rem;
+        font-weight: 600;
+    }
+
     &--pink {
         background-color: $color-secondary-two-1;
         color: $color-white;
