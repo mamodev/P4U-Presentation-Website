@@ -114,8 +114,9 @@ body {
     margin: auto; }
 
 .heading-tertiary {
-  font-size: 3.5rem;
-  font-weight: 600; }
+  font-size: 3.2rem;
+  font-weight: 500;
+  letter-spacing: 1.5px; }
   .heading-tertiary--yellow {
     color: #F8F4D9; }
 
@@ -635,6 +636,88 @@ body {
         height: 40%;
         width: 80%;
         background-color: #F2055C; }
+
+.footer {
+  background-image: url(../img/SVG/backgroundN3.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 110rem;
+  padding-top: calc(110rem - 83em); }
+  .footer__logo-box {
+    height: 20rem;
+    width: 20rem;
+    margin: auto;
+      margin-top: calc(110rem - 91em); }
+  .footer__logo {
+    height: 100%;
+    width: 100%; }
+  .footer__content {
+    display: flex;
+    margin-top: 2rem; }
+  .footer__navigation {
+    flex: 0 1 50%;
+    padding: 0 5rem; }
+  .footer__title {
+    color: #F8F4D9;
+    font-size: 2.7rem;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    margin-bottom: 2rem;
+    text-transform: uppercase; }
+  .footer__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2rem;
+    border-top: 1px solid #F8F4D9; }
+  .footer__link:link, .footer__link:visited {
+    color: #F8F4D9;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2.1rem;
+    letter-spacing: 2.5px;
+    transition: all .2s;
+    display: inline-block;
+    padding: 1rem 1.5rem; }
+  .footer__link:hover, .footer__link:active {
+    color: #4E5169;
+    background-color: #F8F4D9;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+    transform: rotate(5deg) scale(1.3); }
+  .footer__social {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 15rem; }
+  .footer__icon-box {
+    border-radius: 50%;
+    border: 1px solid #F8F4D9;
+    padding: 1.8rem;
+    transition: all .2s; }
+    .footer__icon-box:hover, .footer__icon-box:active {
+      background-color: #F8F4D9;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+      transform: scale(1.3); }
+  .footer__icon-box:hover .footer__icon {
+    fill: #4E5169; }
+  .footer__icon-box:active .footer__icon {
+    fill: #4E5169; }
+  .footer__icon {
+    fill: #F8F4D9;
+    width: 3.2rem;
+    height: 3.2rem;
+    transition: all .2s; }
+  .footer__copyright {
+    flex: 0 1 50%; }
+  .footer__text {
+    font-size: 1.4rem;
+    letter-spacing: 1.5px;
+    line-height: 3rem;
+    font-weight: 300;
+    color: #F8F4D9;
+    width: 70%;
+    margin: auto;
+    border-top: 1px solid #F8F4D9;
+    padding-top: 3rem; }
 
 .navigation {
   width: 100%;
