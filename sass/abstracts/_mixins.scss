@@ -13,8 +13,12 @@
         @media only screen and (max-width: $tab-land) { @content };
     }
 
+    @if $breakpoint == desktop {
+        @media only screen and (max-width: $desktop) { @content };
+    }
+
     @if $breakpoint == big-desktop {
         @media only screen and (min-width: $big-deskstop) { @content }; 
     }
 }
-// --------------------- MEDIA QUERY MANAGER ----------------
+// --------------------- MEDIA QUERY MANAGER ----------------$deskstop

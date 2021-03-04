@@ -71,14 +71,16 @@ $normal-title-font-size   : 3.2rem;
 $large-title-font-size    : 3.5rem;
 $xlarge-title-font-size   : 6rem;
 
-$normal-button-font-size  : 2rem;
+$xsmall-button-font-size  : 1.5rem;
+$small-button-font-size   : 1.8rem;
+$normal-button-font-size  : 2.2rem;
 $big-button-font-size     : 4rem;
 // ------------------- FONT SIZE --------------
 
 
 
 // ------------------- MARGIN SIZE --------------
-$margin-xsmall  : 1.5rem;
+$margin-xsmall  : 1.7rem;
 $margin-small   : 3rem;
 $margin-medium  : 5rem;
 $margin-large   : 8rem;
@@ -89,9 +91,10 @@ $margin-xxlarge : 18rem;
 
 
 // ------------------- MEDIA QUERY --------------
-$phone          : 37.5em;       // 600px
-$tab-port       : 56.25em;      // 900px
-$tab-land       : 75em;         // 1200px
+$phone          : 31.25em;      // 500px
+$tab-port       : 59.375em;     // 950px
+$tab-land       : 81.25em;      // 1300px
+$desktop        : 106.25em;     // 1600px
 $big-deskstop   : 112.5em;      // 1800px
 // ------------------- MEDIA QUERY --------------
 
