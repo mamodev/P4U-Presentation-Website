@@ -1543,14 +1543,17 @@ body {
         display: none; } }
 
 main {
-  margin-top: 105rem; }
+  margin-top: 115rem; }
+  @media only screen and (max-width: 106.25em) {
+    main {
+      margin-top: 105rem; } }
   @media only screen and (max-width: 81.25em) {
     main {
       margin-top: 85rem; } }
   @media only screen and (max-width: 62.5em) {
     main {
-      margin-top: 120rem; } }
-  @media only screen and (max-width: 62.5em) {
+      margin-top: 115rem; } }
+  @media only screen and (max-width: 31.25em) {
     main {
       margin-top: 105rem; } }
 
@@ -1601,7 +1604,7 @@ main {
 
 .section-overview {
   width: 100%;
-  height: 400rem;
+  height: 420rem;
   background-repeat: no-repeat;
   background-image: url(../img/SVG/backgroundN1.svg);
   background-size: cover;

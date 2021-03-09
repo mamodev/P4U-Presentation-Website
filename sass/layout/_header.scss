@@ -28,9 +28,7 @@
         top: -15rem;
     }
 
-    @include respond(phone) {
-        height: 90vh;
-    }
+    @include respond(phone) {height: 90vh;}
 
     &__illustration {
         flex: 0 1 40%;
@@ -82,9 +80,7 @@
             height: 70rem;
         }
 
-        @include respond(phone) {
-            height: 50rem;
-        }
+        @include respond(phone) {height: 50rem;}
     }
 
     &__logo {
