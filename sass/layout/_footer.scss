@@ -1,18 +1,27 @@
 .footer {
     $height: 110rem;
+    width: 100%;
 
     background-image: url(../img/SVG/backgroundN3.svg);
     background-repeat: no-repeat;
     background-size: cover;
     height: $height;
-    padding-top: calc(#{$height} - 83em);
+    padding-top: calc(#{$height} - 85rem);
+
+    @include respond(tab-port) {
+        background-image: url(../img/SVG/backgroundN3-small.svg);
+        height: 140rem;
+    }
 
     &__logo-box {
         height: 20rem;
         width: 20rem;
-        margin: auto{
-            top: calc(#{$height} - 91em);
-        };
+        margin: auto{top: calc(#{$height} - 91rem);};
+
+        @include respond(tab-port) {
+            height: 18rem;
+            width: 18rem;
+        }
     }
 
     &__logo {
@@ -23,6 +32,12 @@
     &__content {
         display: flex;
         margin-top: 2rem;
+        background-color: $color-primary-one-1;
+
+        @include respond(tab-port) {
+            flex-direction: column;
+            justify-content: center;
+        }
     }
 
     &__navigation {
@@ -37,6 +52,8 @@
         letter-spacing: 2.5px;
         margin-bottom: 2rem;
         text-transform: uppercase;
+
+        @include respond(tab-port) {font-size: 2.3rem;}
     }
 
     &__list {
@@ -45,6 +62,17 @@
         justify-content: space-around;
         padding-top: 2rem;
         border-top: 1px solid $color-primary-two-1;
+        flex-wrap: wrap;
+
+        @include respond(desktop) {
+            padding-top: 1rem;
+        }
+
+        @include respond(phone) {
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__link {
@@ -58,6 +86,10 @@
             transition: all .2s;
             display: inline-block;
             padding: 1rem 1.5rem;
+
+            @include respond(tab-port) {
+                font-size: 1.8rem;
+            }
         }
 
         &:hover,
@@ -73,6 +105,13 @@
         display: flex;
         justify-content: space-around;
         padding: 0 15rem;
+
+        @include respond(desktop) {padding: 0 7rem;}
+
+        @include respond(tab-land) {padding: 0rem;}
+
+        @include respond(phone) {flex-wrap: wrap;}
+
     }
 
     &__icon-box {
@@ -87,6 +126,8 @@
             box-shadow: 0 1rem 2rem rgba($color-black, .4);
             transform: scale(1.3);
         }
+
+        @include respond(phone) {margin: .5rem;}
     }
 
     &__icon-box:hover &__icon {
@@ -102,10 +143,23 @@
         width: 3.2rem;
         height: 3.2rem;
         transition: all .2s;
+
+        @include respond(tab-port) {
+            width: 3rem;
+            height: 3rem;
+        }
     }
 
     &__copyright {
         flex: 0 1 50%;
+
+        @include respond(tab-port) {margin-top: 4rem;}
+
+        @include respond(phone) {
+            padding: 0 2rem;
+            margin-bottom: 2rem;
+        }
+        
     } 
 
     &__text {
@@ -117,7 +171,17 @@
         width: 70%;
         margin: auto;
         border-top: 1px solid $color-primary-two-1;
-        padding-top: 3rem;
+        padding-top: 2rem;
+
+        @include respond(desktop) {
+            padding-top: 1rem;
+            font-size: 1.2rem;
+        }
+
+        @include respond(phone) {
+            font-size: 1rem;
+            width: 100%;
+        }
     }
 
 }

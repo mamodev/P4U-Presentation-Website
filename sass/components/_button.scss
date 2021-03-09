@@ -38,25 +38,19 @@
         }
     }
 
-    &--navbar {
-
-        @include respond(tab-port) {
-            padding: 2.5rem 13rem;
-            font-size: 2.5rem;
-            font-weight: 600;
-        }
-
-        @include respond(phone) {
-            padding: 2.5rem 10rem;
-            font-size: 2rem;
-            font-weight: 600;
-        }
-    }
-
     &--big {
         padding: 1.7rem 3.5rem;
         font-size: 2.5rem;
         font-weight: 600;
+
+        @include respond(tab-land) {
+            padding: 1.7rem 3.2rem;
+            font-size: 2.2rem;
+        }
+
+        @include respond(phone) {
+            font-size: 2rem;
+        }
     }
 
     &--ultra {

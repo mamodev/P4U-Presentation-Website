@@ -21,4 +21,13 @@
         @media only screen and (min-width: $big-deskstop) { @content }; 
     }
 }
-// --------------------- MEDIA QUERY MANAGER ----------------$deskstop
+// --------------------- MEDIA QUERY MANAGER ----------------
+
+
+// --------------------- BOX SHADOW MIXIN ----------------
+@mixin box-shadow($top, $left, $blur, $color, $inset:"") {
+    -webkit-box-shadow:$top $left $blur $color #{$inset};
+    -moz-box-shadow:$top $left $blur $color #{$inset};
+    box-shadow:$top $left $blur $color #{$inset};
+}
+// --------------------- BOX SHADOW MIXIN ----------------

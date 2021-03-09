@@ -1,25 +1,53 @@
+main {
+    margin-top: 105rem;
+
+    @include respond(tab-land) {margin-top: 85rem;}
+
+    @include respond(tab-port) {margin-top: 120rem;}
+
+    @include respond(tab-port) {margin-top: 105rem;}
+}
+
 .section-service {
-    width: 95%;
+    width: 100%;
     margin: auto;
 
-    margin-top: 105rem;
     padding: 0 5rem;
+
+    @include respond(desktop) {
+        margin-top: 0rem;
+        padding: 0rem;
+    }
+
+    @include respond(phone) {
+        margin-top: 0rem;
+        transform: translateY(-20rem);
+    }
 
     &__group {
         display: flex;
         justify-content: space-around;
         align-items: center;
+
+        @include respond(tab-port) {
+            flex-wrap: wrap;
+            transform: translateY(-5rem);
+        }
     }
 }
 
 .section-about-us {
-    position: relative;
+    width: 100%;
+
+    @include respond(phone) {transform: translateY(-20rem);}
+
+    &__scroll{position: relative;}
 
     &__background {
         position: absolute;
         width: 100%;
         height: 40rem;
-        top: 22rem;
+        top: 8rem;
         left: 0;
         z-index: -1;
         background-color: $color-primary-one-1;
@@ -43,9 +71,17 @@
     background-image: url(../img/SVG/backgroundN1.svg);
     background-size: cover;
     overflow: hidden;
-    padding: 0rem {
-        top: 25rem
-    };
+    padding: 0rem {top: 25rem};
+
+
+    @include respond(tab-port) {
+        display: none;
+        background-image: url(../img/SVG/backgroundN1-small.svg);
+        height: 480rem;
+        transform: translateY(-10rem);
+    }
+
+    @include respond(phone) {transform: translateY(-25rem);}
 
     &__list {
         height: 87%;
@@ -53,6 +89,15 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+
+        @include respond(tab-port) {height: 90%;}
     }
 }
 
+.section-faq {
+    margin-bottom: 18rem;
+    @include respond(phone) {
+        margin-bottom: 0rem;
+        transform: translateY(-20rem);
+    }
+}

@@ -67,6 +67,8 @@ $color-black          : #000;
 
 // ------------------- FONT SIZE --------------
 $default-font-size        : 1.6rem;
+$xsmall-title-font-size   : 2.1rem;
+$small-title-font-size    : 2.7rem;
 $normal-title-font-size   : 3.2rem;
 $large-title-font-size    : 3.5rem;
 $xlarge-title-font-size   : 6rem;
@@ -92,7 +94,7 @@ $margin-xxlarge : 18rem;
 
 // ------------------- MEDIA QUERY --------------
 $phone          : 31.25em;      // 500px
-$tab-port       : 59.375em;     // 950px
+$tab-port       : 62.5em;       // 1000px
 $tab-land       : 81.25em;      // 1300px
 $desktop        : 106.25em;     // 1600px
 $big-deskstop   : 112.5em;      // 1800px

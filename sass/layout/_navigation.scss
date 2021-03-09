@@ -26,11 +26,8 @@
 
         background-color: transparent;
         box-shadow: none;
-        padding: 0;
         
-        position: sticky;
-        height: 100vh;
-
+        padding: 0;
         margin-top: 0rem;
     }
 
@@ -70,7 +67,8 @@
         top: 3rem;
         right: 4rem;
         z-index: 4000;
-        transition: transform .8s cubic-bezier(0.86, 0, 0.87, 1);
+        transition: transform .8s 
+                    cubic-bezier(0.86, 0, 0.87, 1);
 
         @include respond(tab-port) {display: block;}
 
@@ -168,12 +166,14 @@
             flex-direction: column;
 
             position: absolute;
-            top: 35%;
+            top: 20rem;
             right: 50%;
 
             z-index: 5000;
             transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
         }
+
+        @include respond(phone) {top: 25rem;}
     }
 
     &__list {
@@ -281,6 +281,20 @@
         }
     }
 
+    &__list + .button-group button {
+        @include respond(tab-port) {
+            padding: 2.5rem 13rem;
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+
+        @include respond(phone) {
+            padding: 2.5rem 10rem;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+    }
+
     &__button:hover &__icon::before {top: -1rem;}
 
     &__button:hover &__icon::after {top: 1rem;}
@@ -308,6 +322,6 @@
         visibility: visible;
         opacity: 1;
         width: 100%;
-        transform: translate(50%, -35%);
+        transform: translateX(50%);
     }
 }

@@ -8,17 +8,15 @@ body {
 }
 
 .heading-secondary {
-    position: relative;
-    z-index: 1;
     $time-animation: .4s;
 
-    max-width: 80%;
+    position: relative;
+    z-index: 1;
     margin: auto;
+    width: 100%;
 
     hr {
-        margin: auto {
-            top: 1rem
-        };
+        margin: auto {top: 1rem};
         width: 20%;
         border: 1px solid $color-primary-one-1;
     }
@@ -31,13 +29,16 @@ body {
         text-transform: uppercase;
         font-weight: 600;
         transition: all $time-animation;
+
+        @include respond(tab-land) {
+            width: 80%;
+            font-size: $small-title-font-size;
+        }
     }
 
     &--animated {
         & + hr {
-            margin: auto {
-                top: 1rem
-            };
+            margin: auto {top: 1rem};
             width: 0px;
             height: 1px;
             visibility: hidden;
@@ -48,23 +49,27 @@ body {
             border: 1px solid $color-primary-one-1;
         }
         
-        &:hover {
-            transform: scale(1.15);
-        }
+        &:hover {transform: scale(1.15);}
     
         &:hover + hr {
             visibility: visible;
             opacity: 1;
             width: 30%;
+
+            @include respond(tab-land) {width: 20%;}
         }
     }
 
     &--text {
         font-size: calc(#{$large-title-font-size} - 1.8rem);
-        line-height: 2.7rem;
+        line-height: 3rem;
         letter-spacing: 1px;
         width: 60%;
         margin: auto;
+
+        @include respond(desktop) {width: 65%;}
+
+        @include respond(tab-port) {width: 90%;}
     }
 
 }
@@ -73,6 +78,14 @@ body {
     font-size: $normal-title-font-size;
     font-weight: 500;
     letter-spacing: 1.5px;
+
+    @include respond(desktop) {
+        font-size: $small-title-font-size;
+    }
+
+    @include respond(tab-land) {
+        font-size: $xsmall-title-font-size;
+    }
 
     &--yellow {
         color: $color-primary-two-1;
