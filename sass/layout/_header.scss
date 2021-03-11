@@ -14,9 +14,29 @@
     align-items: center;
     padding-top: 10rem;
 
-    &--1 {background-image: url(../img/SVG/backgroundN2.svg);}
+    &--1 {
+        background-image: url(../img/SVG/backgroundN2.svg);
 
-    &--2 {background-image: url(../img/SVG/backgroundN4.svg);}
+        @include respond(tab-port) {
+            background-image: url(../img/SVG/backgroundN2-small.svg);
+        }
+    }
+
+    &--2 {
+        background-image: url(../img/SVG/backgroundN4.svg);
+        
+        @include respond(tab-port) {
+            background-image: url(../img/SVG/backgroundN4-small.svg);
+        }
+    }
+
+    &--3 {
+        background-image: url(../img/SVG/backgroundN5.svg);
+        
+        @include respond(tab-port) {
+            background-image: url(../img/SVG/backgroundN5-small.svg);
+        }
+    }
 
     @include respond(tab-land) {
         top: -25rem;
@@ -26,7 +46,6 @@
 
     @include respond(tab-port) {
         padding-top: 0rem;
-        background-image: url(../img/SVG/backgroundN2-small.svg);
         height: 120vh;
         top: -15rem;
     }
@@ -91,8 +110,13 @@
     }
 
     &--2 &__content {
-        height: 60rem;
-        transform: translateY(8rem);
+        height: 55rem;
+        transform: translateY(5rem);
+    }
+
+    &--3 &__content {
+        height: 55rem;
+        transform: translateY(5rem);
     }
 
     &__logo {

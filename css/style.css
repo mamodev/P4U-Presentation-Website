@@ -60,7 +60,8 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-color: #E6F8FE; }
 
 ::-webkit-scrollbar {
   width: 0;
@@ -78,6 +79,10 @@ body {
 
 .heading-primary {
   color: #F8F4D9; }
+  .heading-primary--yellow {
+    color: #F8F4D9; }
+  .heading-primary--blue {
+    color: #4E5169; }
   .heading-primary__title {
     line-height: 6rem;
     margin-bottom: 2rem; }
@@ -90,6 +95,9 @@ body {
     .heading-primary__title--main {
       font-size: 8rem;
       text-transform: uppercase; }
+      @media only screen and (max-width: 62.5em) {
+        .heading-primary__title--main {
+          font-size: 7rem; } }
       @media only screen and (max-width: 31.25em) {
         .heading-primary__title--main {
           font-size: 4rem; } }
@@ -100,19 +108,26 @@ body {
     font-size: calc(3.5rem - 1.6rem);
     line-height: 4rem;
     letter-spacing: 1px;
-    width: 55%;
     margin: auto;
     font-weight: 300; }
+    .heading-primary__text--normal {
+      width: 55%; }
+      @media only screen and (max-width: 81.25em) {
+        .heading-primary__text--normal {
+          width: 75%; } }
+      @media only screen and (max-width: 31.25em) {
+        .heading-primary__text--normal {
+          width: 85%; } }
     @media only screen and (max-width: 81.25em) {
       .heading-primary__text {
         font-size: calc(3.5rem - 2rem);
-        line-height: 3.2rem;
-        width: 65%; } }
+        line-height: 3.2rem; } }
     @media only screen and (max-width: 31.25em) {
       .heading-primary__text {
         font-size: calc(3.5rem - 2.2rem);
-        line-height: 2.5rem;
-        width: 85%; } }
+        line-height: 2.5rem; } }
+    .heading-primary__text--large {
+      width: 75%; }
 
 .heading-secondary {
   position: relative;
@@ -350,8 +365,19 @@ body {
   padding-top: 10rem; }
   .header--1 {
     background-image: url(../img/SVG/backgroundN2.svg); }
+    @media only screen and (max-width: 62.5em) {
+      .header--1 {
+        background-image: url(../img/SVG/backgroundN2-small.svg); } }
   .header--2 {
     background-image: url(../img/SVG/backgroundN4.svg); }
+    @media only screen and (max-width: 62.5em) {
+      .header--2 {
+        background-image: url(../img/SVG/backgroundN4-small.svg); } }
+  .header--3 {
+    background-image: url(../img/SVG/backgroundN5.svg); }
+    @media only screen and (max-width: 62.5em) {
+      .header--3 {
+        background-image: url(../img/SVG/backgroundN5-small.svg); } }
   @media only screen and (max-width: 81.25em) {
     .header {
       top: -25rem;
@@ -360,7 +386,6 @@ body {
   @media only screen and (max-width: 62.5em) {
     .header {
       padding-top: 0rem;
-      background-image: url(../img/SVG/backgroundN2-small.svg);
       height: 120vh;
       top: -15rem; } }
   @media only screen and (max-width: 31.25em) {
@@ -412,8 +437,11 @@ body {
       .header--1 .header__content {
         height: 50rem; } }
   .header--2 .header__content {
-    height: 60rem;
-    transform: translateY(8rem); }
+    height: 55rem;
+    transform: translateY(5rem); }
+  .header--3 .header__content {
+    height: 55rem;
+    transform: translateY(5rem); }
   .header__logo {
     display: flex;
     justify-content: space-between;
@@ -1521,7 +1549,7 @@ body {
     left: 50%;
     font-size: 2.3rem;
     color: #4E5169;
-    background-color: #FEE6EF;
+    background-color: #E6F8FE;
     transform: translate(-6rem, -3rem); }
     @media only screen and (max-width: 81.25em) {
       .arrow__title {
@@ -1816,9 +1844,6 @@ body {
   .button-text--center {
     align-items: center; }
 
-.community {
-  background-color: #FEE6EF; }
-
 .community-main {
   margin-top: 85rem; }
   @media only screen and (max-width: 106.25em) {
@@ -1889,9 +1914,6 @@ body {
   width: 35rem;
   height: 55rem;
   box-shadow: 0.2rem 0.1rem 4rem rgba(0, 0, 0, 0.4); }
-
-.home {
-  background-color: #E6F8FE; }
 
 .home-main {
   margin-top: 100rem; }
@@ -1987,3 +2009,18 @@ body {
     .section-faq {
       margin-bottom: 0rem;
       transform: translateY(-20rem); } }
+
+.about-main {
+  margin-top: 85rem; }
+  @media only screen and (max-width: 106.25em) {
+    .about-main {
+      margin-top: 100rem; } }
+  @media only screen and (max-width: 81.25em) {
+    .about-main {
+      margin-top: 80rem; } }
+  @media only screen and (max-width: 62.5em) {
+    .about-main {
+      margin-top: 100rem; } }
+  @media only screen and (max-width: 31.25em) {
+    .about-main {
+      margin-top: 70rem; } }

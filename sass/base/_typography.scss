@@ -10,6 +10,14 @@ body {
 .heading-primary {
     color: $color-primary-two-1;
 
+    &--yellow {
+        color: $color-primary-two-1;
+    }
+
+    &--blue {
+        color: $color-primary-one-1;
+    }
+
     &__title {
         line-height: 6rem;
         margin-bottom: 2rem;
@@ -27,6 +35,10 @@ body {
             font-size: 8rem;
             text-transform: uppercase;
 
+            @include respond(tab-port) {
+                font-size: 7rem;
+            }
+
             @include respond(phone) {
                 font-size: 4rem;
             }
@@ -41,20 +53,29 @@ body {
         font-size: calc(#{$large-title-font-size} - 1.6rem);
         line-height: 4rem;
         letter-spacing: 1px;
-        width: 55%;
         margin: auto;
         font-weight: 300;
+
+        &--normal {
+            width: 55%;
+
+            @include respond(tab-land) {width: 75%;}
+    
+            @include respond(phone) {width: 85%;}
+        }
 
         @include respond(tab-land) {
             font-size: calc(#{$large-title-font-size} - 2rem);
             line-height: 3.2rem;
-            width: 65%;
         }
 
         @include respond(phone) {
             font-size: calc(#{$large-title-font-size} - 2.2rem);
             line-height: 2.5rem;
-            width: 85%;
+        }
+
+        &--large {
+            width: 75%;
         }
     }
 }

@@ -1,0 +1,11 @@
+.about-main {
+    margin-top: 85rem;
+
+    @include respond(desktop) {margin-top: 100rem;}
+
+    @include respond(tab-land) {margin-top: 80rem;}
+
+    @include respond(tab-port) {margin-top: 100rem;}
+
+    @include respond(phone) {margin-top: 70rem;}
+}
