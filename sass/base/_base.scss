@@ -18,3 +18,8 @@ body {
     width: 0; 
     background: transparent;
 }
+
+::selection {
+    background-color: $color-primary-one-2;
+    color: $color-primary-two-1;
+}

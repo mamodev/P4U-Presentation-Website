@@ -40,6 +40,20 @@
         &:hover {transform: scale(1.1);}
     }
 
+    &__title {
+        font-size: $normal-title-font-size;
+        font-weight: 500;
+        letter-spacing: 1.5px;
+        
+        @include respond(desktop) {
+            font-size: $small-title-font-size;
+        }
+        
+        @include respond(tab-land) {
+            font-size: $xsmall-title-font-size;
+        }
+    }
+
     &__description{
         line-height: 4rem;
         letter-spacing: 2px;

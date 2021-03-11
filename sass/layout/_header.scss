@@ -45,8 +45,9 @@
     }
 
     &__img {
-        width: 67rem;
-        height: 72rem;
+        width: 55rem;
+        height: 60rem;
+        transform: translateY(2.5rem);
 
         @include respond(desktop) {
             transform: translateY(3.5rem);

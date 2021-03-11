@@ -17,11 +17,23 @@ body {
         &--sub {
             font-size: 2rem;
             font-weight: 400;
+
+            @include respond(phone) {
+                font-size: 1.5rem;
+            }
         }
 
         &--main {
             font-size: 8rem;
             text-transform: uppercase;
+
+            @include respond(phone) {
+                font-size: 4rem;
+            }
+        }
+
+        @include respond(phone) {
+            line-height: 4rem;
         }
     }
 
@@ -32,6 +44,18 @@ body {
         width: 55%;
         margin: auto;
         font-weight: 300;
+
+        @include respond(tab-land) {
+            font-size: calc(#{$large-title-font-size} - 2rem);
+            line-height: 3.2rem;
+            width: 65%;
+        }
+
+        @include respond(phone) {
+            font-size: calc(#{$large-title-font-size} - 2.2rem);
+            line-height: 2.5rem;
+            width: 85%;
+        }
     }
 }
 
@@ -113,6 +137,10 @@ body {
 
     @include respond(tab-land) {
         font-size: $xsmall-title-font-size;
+    }
+
+    @include respond(tab-land) {
+        font-size: $normal-title-font-size;
     }
 
     &--yellow {

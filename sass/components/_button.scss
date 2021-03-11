@@ -3,12 +3,35 @@
     align-items: center;
     justify-content: space-around;
 
+    @include respond(tab-port) {
+        flex-direction: column;
+     }
+
     &--center {width: 100%;}
 
-    &--left {justify-content:flex-start;}
+    &--left {
+        justify-content:flex-start;
+    
+        @include respond(tab-port) {
+            flex-direction: row;
+            justify-content: space-around;
+         }
+    }
 
-    @include respond(tab-port) {
-       flex-direction: column;
+    &--left .button-text:not(:first-child){
+        margin-left: 5rem;
+
+        @include respond(tab-port) {
+            margin-left: 0rem;
+        }
+    }
+
+    &--left .button-text:not(:first-child){
+        margin-left: 5rem;
+
+        @include respond(tab-port) {
+            margin-left: 0rem;
+        }
     }
 }
 
@@ -178,6 +201,11 @@
         transform: rotate(90deg);
         margin-top: 1.2rem;
         cursor: pointer;
+
+        @include respond(phone) {
+            margin-top: .8rem;
+            height: 4rem;
+        }
     }
     
     &__btn {
@@ -202,6 +230,10 @@
             padding: 1rem;
             font-size: 2.6rem;
             font-weight: 100;
+
+            @include respond(phone) {
+                font-size: 1.7rem;
+            }
         }
 
         & + hr {
@@ -209,6 +241,10 @@
             border: transparent {
                 top: 1px solid $color-primary-one-1;
             };
+
+            @include respond(phone) {
+                width: 40%;
+            }
         }
 
         &:focus {

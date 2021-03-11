@@ -11,9 +11,40 @@
         transform: rotateY(180deg);
     }
 
+    &--reverse &__title, &--reverse &__body {
+        text-align: left;
+
+        @include respond(tab-port) {
+            text-align: center;
+        }
+    }
+
+    @include respond(tab-port) {
+        flex-direction: column;
+    }
+
     &__figure {
         width: 55rem;
-        height: 50rem;
+        height: 55rem;
+
+        @include respond(desktop) {
+            width: 47rem;
+            height: 47rem;
+        }
+
+        @include respond(tab-land) {
+            width: 40rem;
+            height: 40rem;
+        }
+
+        @include respond(tab-port) {
+            margin-bottom: 5rem;
+        }
+
+        @include respond(phone) {
+            width: 30rem;
+            height: 30rem;
+        }
     }
 
     &__img {
@@ -22,12 +53,19 @@
     }
 
     &__content {
-        flex: 0 1 50%;
+        flex: 0 1 55%;
+        
+        @include respond(desktop) {flex: 0 1 50%;}
     }
 
     &__title {
         font-size: 4rem;
         letter-spacing: 2px;
+        text-align: right;
+
+        @include respond(tab-land) {
+            font-size: 3rem;
+        }
     }
 
     &__body {
@@ -36,5 +74,19 @@
         letter-spacing: 2px;
         font-weight: 400;
         margin-top: 3rem;
+        text-align: right;
+
+        @include respond(desktop) {
+            font-size: 1.5rem;
+            line-height: 3.2rem;
+        }
+    }
+
+
+
+    @include respond(tab-port) {
+        &__title, &__body {
+            text-align: center;
+        }
     }
 }
