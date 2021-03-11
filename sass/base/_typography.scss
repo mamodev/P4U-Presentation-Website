@@ -7,6 +7,34 @@ body {
     color: $color-primary-one-1;
 }
 
+.heading-primary {
+    color: $color-primary-two-1;
+
+    &__title {
+        line-height: 6rem;
+        margin-bottom: 2rem;
+        
+        &--sub {
+            font-size: 2rem;
+            font-weight: 400;
+        }
+
+        &--main {
+            font-size: 8rem;
+            text-transform: uppercase;
+        }
+    }
+
+    &__text {
+        font-size: calc(#{$large-title-font-size} - 1.6rem);
+        line-height: 4rem;
+        letter-spacing: 1px;
+        width: 55%;
+        margin: auto;
+        font-weight: 300;
+    }
+}
+
 .heading-secondary {
     $time-animation: .4s;
 

@@ -1,0 +1,26 @@
+.arrow {
+    position: relative;
+
+    $line-width: .2rem;
+    &__line {
+        margin: auto;
+        height: 25rem;
+        width: $line-width;
+        background-image: linear-gradient($color-primary-one-1 33%, 
+        rgba(255,255,255,0) 0%);
+        background-position: right;
+        background-size: $line-width 4rem;
+        background-repeat: repeat-y;
+    }
+
+    &__title {
+        padding: 2rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 2.3rem;
+        color: $color-primary-one-1;
+        background-color: $color-background-4;
+        transform: translate(-6rem, -3rem);
+    }
+}

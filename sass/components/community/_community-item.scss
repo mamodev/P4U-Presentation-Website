@@ -1,0 +1,40 @@
+.community-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &--reverse {
+        flex-direction: row-reverse;
+    }
+
+    &--reverse &__img {
+        transform: rotateY(180deg);
+    }
+
+    &__figure {
+        width: 55rem;
+        height: 50rem;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__content {
+        flex: 0 1 50%;
+    }
+
+    &__title {
+        font-size: 4rem;
+        letter-spacing: 2px;
+    }
+
+    &__body {
+        font-size: 1.8rem;
+        line-height: 4rem;
+        letter-spacing: 2px;
+        font-weight: 400;
+        margin-top: 3rem;
+    }
+}

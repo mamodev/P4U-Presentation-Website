@@ -10,12 +10,17 @@
 @import "layout/header";
 @import "layout/footer";
 @import "layout/navigation";
+@import "layout/form";
 
-@import "components/service";
+@import "components/home/service";
+@import "components/home/overview-item";
+@import "components/home/faq-item";
+
+@import "components/community/community-item";
+@import "components/community/arrow";
+
 @import "components/admin-card";
 @import "components/button";
-@import "components/overview-item";
-@import "components/faq-item";
 
-
+@import "pages/community";
 @import "pages/home";

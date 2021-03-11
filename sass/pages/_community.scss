@@ -1,0 +1,31 @@
+.community {background-color: $color-background-4;}
+
+.community-main {margin-top: 85rem;}
+
+.section-presentation {padding: 5rem 17rem;}
+
+.section-form {
+
+    &__form {
+        width: 55%;
+        padding: 5rem{right: 30rem};
+        border-radius: 3rem;
+        background-color: $color-background-5;
+        margin: auto;
+        border: 1px solid $color-primary-one-1;
+        position: relative;
+        box-shadow: $shadow-large-black;
+    }
+
+    &__figure {
+        position: absolute;
+        top: 7rem;
+        right: -10rem;
+    }
+
+    &__img{
+        width: 35rem;
+        height: 55rem;
+    }
+    
+}

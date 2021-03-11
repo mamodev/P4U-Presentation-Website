@@ -1,7 +1,11 @@
 .button-group {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+
+    &--center {width: 100%;}
+
+    &--left {justify-content:flex-start;}
 
     @include respond(tab-port) {
        flex-direction: column;
@@ -25,7 +29,6 @@
         background-color: $color-white;
         color: $color-black;
     }
-
 
     &--normal {
         padding: 1.5rem 3rem;
@@ -153,9 +156,15 @@
 .button-text {
     width: max-content;
     transition: all .2s;
+    display: flex;
+    flex-direction: column;
 
     &--yellow &__btn, &__btn + hr {
         color: $color-primary-two-1;
+    }
+
+    &--yellow &__icon {
+        fill: $color-primary-two-1;
     }
 
     &--yellow &__btn + hr {
@@ -163,14 +172,18 @@
             top: 1px solid $color-primary-two-1;
         };
     }
+
+    &__icon {
+        height: 7rem;
+        transform: rotate(90deg);
+        margin-top: 1.2rem;
+        cursor: pointer;
+    }
     
     &__btn {
         width: max-content;
         display: inline-block;
         text-decoration: none;
-        padding: 1rem 1rem;
-        font-size: 2.2rem;
-        font-weight: 100;
         
         border: none;
         cursor: pointer;
@@ -178,18 +191,17 @@
     
         background-color: transparent;
         color: $color-primary-one-1;
-        
 
-        &--left + hr, &--left {
-            clear: left;
+        &--normal{
+            padding: 1rem;
+            font-size: 2.2rem;
+            font-weight: 100;
         }
 
-        &--right + hr, &--left {
-            clear: right;
-        }
-
-        &--center + hr, &--left {
-            margin: auto;
+        &--large {
+            padding: 1rem;
+            font-size: 2.6rem;
+            font-weight: 100;
         }
 
         & + hr {
@@ -209,7 +221,18 @@
         }
     }
     
-    &:hover {
-        transform: scale(1.1);
-    }
+    &:hover {transform: scale(1.1);}
+
+
+    &--left {align-items: flex-start;}
+
+    &--right {align-items: flex-end;}
+
+    &--left {align-items: flex-start;}
+
+    &--left &__btn {padding-left: 0rem;}
+
+    &--right &__btn {padding-right: 0rem;}
+
+    &--center {align-items: center;}
 }

@@ -1,5 +1,7 @@
-main {
-    margin-top: 115rem;
+.home {background-color: $color-background-3;}
+
+.home-main {
+    margin-top: 100rem;
 
     @include respond(desktop) {margin-top: 105rem;}
 
