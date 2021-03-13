@@ -129,6 +129,12 @@ $phone-diff: 5rem;
         margin-bottom: calc(#{$margin-xxlarge} / #{$tab-port}) !important;
     }
 }
+
+.u-margin-bottom-xxxlarge {margin-bottom: $margin-xxxlarge !important;
+    @include respond(tab-port) {
+        margin-bottom: calc(#{$margin-xxxlarge} / #{$tab-port}) !important;
+    }
+}
 // ------------------- MARGIN BOTTOM --------------
 
 
@@ -167,6 +173,12 @@ $phone-diff: 5rem;
 .u-margin-top-xxlarge {margin-top: $margin-xxlarge !important;
     @include respond(tab-port) {
         margin-bottom: calc(#{$margin-xxlarge} / #{$tab-port}) !important;
+    }
+}
+
+.u-margin-top-xxxlarge {margin-top: $margin-xxxlarge !important;
+    @include respond(tab-port) {
+        margin-bottom: calc(#{$margin-xxxlarge} / #{$tab-port}) !important;
     }
 }
 // ------------------- MARGIN TOP --------------

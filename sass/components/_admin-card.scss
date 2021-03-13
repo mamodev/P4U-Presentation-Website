@@ -8,6 +8,89 @@
     transition: all $time-animation;
     cursor: pointer;
 
+
+    //------------------ LARGE ------------------
+    &--large {flex: 0 1 20%;}
+
+    &--large &__avatar {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    &--large &__caption{
+        font-size: 2rem;
+        margin: auto {top: 3rem;};
+    }
+
+    &--large &__content {width: 25rem;}
+
+    &--large &__name {font-size: 2.5rem;}
+
+    &--large &__nickname:link,
+    &--large &__nickname:visited {
+        font-size: 2rem;
+
+        &:hover,
+        &:active {font-size: 2.3rem;}
+    }
+
+    &--large &__intro {
+        font-size: 1.3rem;
+        letter-spacing: 2.2px;
+        line-height: 2.3rem;
+    }
+
+    &--large &__icon {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    &--large:hover &__caption {
+        transform: translate(-50%, -160%)!important;
+    }
+    //------------------ LARGE ------------------
+
+
+
+    //------------------ YELLOW ------------------
+    &--yellow {background-color: $color-primary-two-1;}
+
+    &--yellow &__name, 
+    &--yellow &__intro, 
+    &--yellow &__nickname:link,
+    &--yellow &__nickname:visited{
+        color: $color-primary-one-1;
+    }
+
+    &--yellow &__name + hr {
+        border: transparent {
+            top: 1px solid $color-primary-one-1;
+        };
+    }
+
+    &--yellow &__icon {fill: $color-primary-one-1;}
+    //------------------ YELLOW ------------------
+
+
+    //------------------ BLUE ------------------
+    &--blue {background-color: $color-primary-one-1;}
+
+    &--blue &__name, 
+    &--blue &__intro, 
+    &--blue &__nickname:link,
+    &--blue &__nickname:visited{
+        color: $color-primary-two-1;
+    }
+
+    &--blue &__name + hr {
+        border: transparent {
+            top: 1px solid $color-primary-two-1;
+        };
+    }
+
+    &--blue &__icon {fill: $color-primary-two-1;}
+    //------------------ BLUE ------------------
+
     &__avatar {
         width: 15rem;
         height: 15rem;
@@ -45,24 +128,16 @@
 
     &__content {
         width: 18rem;
-        margin: auto {
-            top: 2rem;
-        };
+        margin: auto {top: 2rem;};
     }
 
     &__name {
         font-size: 2rem;
         font-weight: 600;
-        color: $color-background-2;
 
         & + hr {
-            margin: auto {
-                top: 1rem;
-            };
+            margin: auto {top: 1rem;};
             width: 65%;
-            border: transparent {
-                top: 1px solid $color-background-2;
-            };
         }
     }
 
@@ -71,15 +146,12 @@
         font-weight: 300;
         letter-spacing: 2px;
         line-height: 1.5rem;
-        margin-top: .8rem;
-        color: $color-background-2;
+        margin-top: .8rem
     }
 
     &__link {
         text-align: center;
-        margin: auto {
-            top: 2rem;
-        };
+        margin: auto {top: 2rem;};
         display: flex;
         align-items: center;
         justify-content: center;
@@ -89,7 +161,6 @@
         width: 2rem;
         height: 2rem;
         margin-right: 1.2rem;
-        fill: $color-background-2;
     }
 
     &__nickname {
@@ -98,7 +169,6 @@
             font-size: 1.5rem;
             font-weight: 600;
             text-decoration: none;
-            color: $color-background-2;
             transition: all .3s;
         }
 

@@ -15,26 +15,26 @@
     padding-top: 10rem;
 
     &--1 {
-        background-image: url(../img/SVG/backgroundN2.svg);
+        background-image: url(../img/background/backgroundN2.svg);
 
         @include respond(tab-port) {
-            background-image: url(../img/SVG/backgroundN2-small.svg);
+            background-image: url(../img/background/backgroundN2-small.svg);
         }
     }
 
     &--2 {
-        background-image: url(../img/SVG/backgroundN4.svg);
+        background-image: url(../img/background/backgroundN4.svg);
         
         @include respond(tab-port) {
-            background-image: url(../img/SVG/backgroundN4-small.svg);
+            background-image: url(../img/background/backgroundN4-small.svg);
         }
     }
 
     &--3 {
-        background-image: url(../img/SVG/backgroundN5.svg);
+        background-image: url(../img/background/backgroundN5.svg);
         
         @include respond(tab-port) {
-            background-image: url(../img/SVG/backgroundN5-small.svg);
+            background-image: url(../img/background/backgroundN5-small.svg);
         }
     }
 
@@ -111,12 +111,23 @@
 
     &--2 &__content {
         height: 55rem;
-        transform: translateY(5rem);
+        margin-top: 7rem;
+
+        @include respond(desktop) {
+            height: 60rem;
+            margin-top: 20rem;
+        }
+
+        @include respond(phone) {
+            height: 45rem;
+            margin-top: 10rem;
+        }
+
     }
 
     &--3 &__content {
         height: 55rem;
-        transform: translateY(5rem);
+        margin-top: 4rem;
     }
 
     &__logo {

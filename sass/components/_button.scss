@@ -197,10 +197,10 @@
     }
 
     &__icon {
-        height: 7rem;
-        transform: rotate(90deg);
-        margin-top: 1.2rem;
+        height: 8rem;
+        margin-top: .7rem;
         cursor: pointer;
+        animation: upBottomArrow 2.5s infinite;
 
         @include respond(phone) {
             margin-top: .8rem;

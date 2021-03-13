@@ -43,7 +43,7 @@
                 <nav class="navigation__nav">
                     <ul class="navigation__list">
                         <li class="navigation__item"><a href="index.html" class="navigation__link">Home</a></li>
-                        <li class="navigation__item"><a href="#" class="navigation__link">About</a></li>
+                        <li class="navigation__item navigation__item--active"><a href="#" class="navigation__link">About</a></li>
                         <li class="navigation__item"><a href="community.html" class="navigation__link">Community</a></li>
                         <li class="navigation__item"><a href="#" class="navigation__link">News</a></li>
                     </ul>
@@ -58,8 +58,8 @@
     
             <!-- ---------------- HEADER (HEADER) ---------------- -->
             <header class="header header--3">
-                <div class="header__content">
-                    <div class="heading-primary">
+                <div class="header__content animated-bottom">
+                    <div class="heading-primary ">
                         <h1 class="heading-primary__title u-center-text">
                             <span class="heading-primary__title--sub">La nostra<br></span>
                             <span class="heading-primary__title--main">Vision</span>
@@ -69,48 +69,372 @@
                             Praesentium nisi fugit doloremque. Dolorum facilis, voluptate commodi veniam natus at 
                             expedita laudantium repellat quisquam ullam, dolor sed laboriosam!
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam fugiat 
-                            impedit ducimus maiores eveniet
+                            impedit ducimus maiores eveniet amet Dolorum facilis, voluptate commodi v 
+                            laudantium repellat quisquam ulla
                         </p>
-                    </div>
-                    <div class="button-group button-group--center">
-                        <div class="button-text button-text--center button-text--yellow">
-                            <a class="button-text__btn button-text__btn--large">
-                                Crea subito il tuo account
-                            </a>
-                            <hr>
-                            <svg class="button-text__icon">
-                                <use xlink:href="img/symbol-defs.svg#icon-arrow"></use>
-                            </svg>
-                        </div>
                     </div>
                 </div>
             </header>
             <!-- ---------------- HEADER (HEADER) ---------------- -->
 
             <main class="about-main">
-                <div class="heading-primary heading-primary--blue u-margin-bottom-large">
-                    <h1 class="heading-primary__title u-center-text">
-                        <span class="heading-primary__title--sub">La nostra<br></span>
-                        <span class="heading-primary__title--main">Mission</span>
-                    </h1>
-                    <p class="heading-primary__text heading-primary__text--large u-center-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, delectus voluptates. 
-                        Praesentium nisi fugit doloremque. Dolorum facilis, voluptate commodi veniam natus at 
-                        expedita laudantium repellat quisquam ullam, dolor sed laboriosam!
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, delectus voluptates. 
-                        Praesentium nisi fugit doloremque. Dolorum facilis, voluptate commodi veniam natus at 
-                        expedita laudantium repellat quisquam ullam, dolor sed laboriosam!
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, tetur adipisicing elit. Harum,
-                        Dolorum facilis, voluptate commodi veniam natus at 
-                        expedita laudantium repellat quisquam ullam, dolor sed laboriosam!
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, tetur adipisicing elit. Harum,
-                    </p>
-                </div>
+                <section class="section-mission u-margin-bottom-xxxlarge">
+                    <div class="heading-primary heading-primary--blue">
+                        <h1 class="heading-primary__title u-center-text">
+                            <span class="heading-primary__title--sub">La nostra<br></span>
+                            <span class="heading-primary__title--main">Mission</span>
+                        </h1>
+                        <p class="heading-primary__text heading-primary__text--large u-center-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, delectus voluptates. 
+                            Praesentium nisi fugit doloremque. Dolorum facilis, voluptate commodi veniam natus at 
+                            expedita laudantium repellat quisquam ullam, dolor sed laboriosam!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, delectus voluptates. 
+                            Praesentium nisi fugit doloremque. Dolorum facilis, voluptate commodi veniam natus at 
+                            expedita laudantium repellat quisquam ullam, dolor sed laboriosam!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, tetur adipisicing elit. Harum,
+                            Dolorum facilis, voluptate commodi veniam natus at 
+                            expedita laudantium repellat quisquam ullam, dolor sed laboriosam!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, tetur adipisicing elit. Harum,
+                        </p>
+                    </div>
+                </section>
+            
+                <section class="section-team u-margin-bottom-xxlarge">
+                    <div class="section-team__background section-team__background--1">&nbsp;</div>
+                    <div class="heading-primary heading-primary--blue u-margin-bottom-small">
+                        <h1 class="heading-primary__title u-center-text">
+                            <span class="heading-primary__title--sub">Il nostro<br></span>
+                            <span class="heading-primary__title--main">Team di Innovatori</span>
+                        </h1>
+                        <p class="heading-primary__text heading-primary__text--xlarge u-center-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, delectus voluptates. 
+                            Praesentium nisi fugit doloremque. Dolorum facilis, voluptate commodi veniam natus at 
+                            expedita laudantium repellat quisquam ullam, dolor sed laboriosam!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, delectus voluptates. 
+                            Praesentium nisi fugit doloremque. Dolorum facilis, voluptate commodi veniam natus at 
+                            expedita laudantium repellat quisquam ullam, dolor sed laboriosam!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, tetur adipisicing elit. Harum,
+                            Dolorum facilis, voluptate commodi veniam natus at 
+                    </div>
+
+                    <div class="section-team__list u-margin-bottom-medium">
+                        <!-- ------------- ADMIN CARD ------------- -->
+                        <div class="admin-card admin-card--large admin-card--yellow">
+                            <!-- ------------- image ------------- -->
+                            <figure class="admin-card__avatar">
+                                <img src="img/image-prova-1.jpg" alt="Avatar" class="admin-card__image">
+                                <figcaption class="admin-card__caption u-center-text">Founder</figcaption>
+                            </figure>
+                            <!-- ------------- image ------------- -->
+
+                            <!-- ------------- content ------------- -->
+                            <div class="admin-card__content u-center-text">
+                                <p class="admin-card__name">Matteo Giuntoni</p>
+                                <hr>
+                                <p class="admin-card__intro">Programmatore web, addetto al database e beckend</p>
+                            </div>
+                            <div class="admin-card__link">
+                                <svg class="admin-card__icon">
+                                    <use xlink:href="img/symbol-defs.svg#icon-instagram"></use>
+                                </svg>
+                                <a href="#" class="admin-card__nickname">matte_giu</a>
+                            </div>
+                            <!-- ------------- content ------------- -->
+                        </div>
+                        <!-- ------------- ADMIN CARD ------------- -->
+
+                        <!-- ------------- ADMIN CARD ------------- -->
+                        <div class="admin-card admin-card--large admin-card--yellow">
+                            <!-- ------------- image ------------- -->
+                            <figure class="admin-card__avatar">
+                                <img src="img/image-prova-1.jpg" alt="Avatar" class="admin-card__image">
+                                <figcaption class="admin-card__caption u-center-text">Founder</figcaption>
+                            </figure>
+                            <!-- ------------- image ------------- -->
+
+                            <!-- ------------- content ------------- -->
+                            <div class="admin-card__content u-center-text">
+                                <p class="admin-card__name">Matteo Giuntoni</p>
+                                <hr>
+                                <p class="admin-card__intro">Programmatore web, addetto al database e beckend</p>
+                            </div>
+                            <div class="admin-card__link">
+                                <svg class="admin-card__icon">
+                                    <use xlink:href="img/symbol-defs.svg#icon-instagram"></use>
+                                </svg>
+                                <a href="#" class="admin-card__nickname">matte_giu</a>
+                            </div>
+                            <!-- ------------- content ------------- -->
+                        </div>
+                        <!-- ------------- ADMIN CARD ------------- -->
+
+                        <!-- ------------- ADMIN CARD ------------- -->
+                        <div class="admin-card admin-card--large admin-card--yellow">
+                            <!-- ------------- image ------------- -->
+                            <figure class="admin-card__avatar">
+                                <img src="img/image-prova-1.jpg" alt="Avatar" class="admin-card__image">
+                                <figcaption class="admin-card__caption u-center-text">Founder</figcaption>
+                            </figure>
+                            <!-- ------------- image ------------- -->
+
+                            <!-- ------------- content ------------- -->
+                            <div class="admin-card__content u-center-text">
+                                <p class="admin-card__name">Matteo Giuntoni</p>
+                                <hr>
+                                <p class="admin-card__intro">Programmatore web, addetto al database e beckend</p>
+                            </div>
+                            <div class="admin-card__link">
+                                <svg class="admin-card__icon">
+                                    <use xlink:href="img/symbol-defs.svg#icon-instagram"></use>
+                                </svg>
+                                <a href="#" class="admin-card__nickname">matte_giu</a>
+                            </div>
+                            <!-- ------------- content ------------- -->
+                        </div>
+                        <!-- ------------- ADMIN CARD ------------- -->
+
+                        <!-- ------------- ADMIN CARD ------------- -->
+                        <div class="admin-card admin-card--large admin-card--yellow">
+                            <!-- ------------- image ------------- -->
+                            <figure class="admin-card__avatar">
+                                <img src="img/image-prova-1.jpg" alt="Avatar" class="admin-card__image">
+                                <figcaption class="admin-card__caption u-center-text">Founder</figcaption>
+                            </figure>
+                            <!-- ------------- image ------------- -->
+
+                            <!-- ------------- content ------------- -->
+                            <div class="admin-card__content u-center-text">
+                                <p class="admin-card__name">Matteo Giuntoni</p>
+                                <hr>
+                                <p class="admin-card__intro">Programmatore web, addetto al database e beckend</p>
+                            </div>
+                            <div class="admin-card__link">
+                                <svg class="admin-card__icon">
+                                    <use xlink:href="img/symbol-defs.svg#icon-instagram"></use>
+                                </svg>
+                                <a href="#" class="admin-card__nickname">matte_giu</a>
+                            </div>
+                            <!-- ------------- content ------------- -->
+                        </div>
+                        <!-- ------------- ADMIN CARD ------------- -->
+
+                        <!-- ------------- ADMIN CARD ------------- -->
+                        <div class="admin-card admin-card--large admin-card--yellow">
+                            <!-- ------------- image ------------- -->
+                            <figure class="admin-card__avatar">
+                                <img src="img/image-prova-1.jpg" alt="Avatar" class="admin-card__image">
+                                <figcaption class="admin-card__caption u-center-text">Founder</figcaption>
+                            </figure>
+                            <!-- ------------- image ------------- -->
+
+                            <!-- ------------- content ------------- -->
+                            <div class="admin-card__content u-center-text">
+                                <p class="admin-card__name">Matteo Giuntoni</p>
+                                <hr>
+                                <p class="admin-card__intro">Programmatore web, addetto al database e beckend</p>
+                            </div>
+                            <div class="admin-card__link">
+                                <svg class="admin-card__icon">
+                                    <use xlink:href="img/symbol-defs.svg#icon-instagram"></use>
+                                </svg>
+                                <a href="#" class="admin-card__nickname">matte_giu</a>
+                            </div>
+                            <!-- ------------- content ------------- -->
+                        </div>
+                        <!-- ------------- ADMIN CARD ------------- -->
+
+                        <!-- ------------- ADMIN CARD ------------- -->
+                        <div class="admin-card admin-card--large admin-card--yellow">
+                            <!-- ------------- image ------------- -->
+                            <figure class="admin-card__avatar">
+                                <img src="img/image-prova-1.jpg" alt="Avatar" class="admin-card__image">
+                                <figcaption class="admin-card__caption u-center-text">Founder</figcaption>
+                            </figure>
+                            <!-- ------------- image ------------- -->
+
+                            <!-- ------------- content ------------- -->
+                            <div class="admin-card__content u-center-text">
+                                <p class="admin-card__name">Matteo Giuntoni</p>
+                                <hr>
+                                <p class="admin-card__intro">Programmatore web, addetto al database e beckend</p>
+                            </div>
+                            <div class="admin-card__link">
+                                <svg class="admin-card__icon">
+                                    <use xlink:href="img/symbol-defs.svg#icon-instagram"></use>
+                                </svg>
+                                <a href="#" class="admin-card__nickname">matte_giu</a>
+                            </div>
+                            <!-- ------------- content ------------- -->
+                        </div>
+                        <!-- ------------- ADMIN CARD ------------- -->
+
+                        <!-- ------------- ADMIN CARD ------------- -->
+                        <div class="admin-card admin-card--large admin-card--yellow">
+                            <!-- ------------- image ------------- -->
+                            <figure class="admin-card__avatar">
+                                <img src="img/image-prova-1.jpg" alt="Avatar" class="admin-card__image">
+                                <figcaption class="admin-card__caption u-center-text">Founder</figcaption>
+                            </figure>
+                            <!-- ------------- image ------------- -->
+
+                            <!-- ------------- content ------------- -->
+                            <div class="admin-card__content u-center-text">
+                                <p class="admin-card__name">Matteo Giuntoni</p>
+                                <hr>
+                                <p class="admin-card__intro">Programmatore web, addetto al database e beckend</p>
+                            </div>
+                            <div class="admin-card__link">
+                                <svg class="admin-card__icon">
+                                    <use xlink:href="img/symbol-defs.svg#icon-instagram"></use>
+                                </svg>
+                                <a href="#" class="admin-card__nickname">matte_giu</a>
+                            </div>
+                            <!-- ------------- content ------------- -->
+                        </div>
+                        <!-- ------------- ADMIN CARD ------------- -->
+
+                        <!-- ------------- ADMIN CARD ------------- -->
+                        <div class="admin-card admin-card--large admin-card--yellow">
+                            <!-- ------------- image ------------- -->
+                            <figure class="admin-card__avatar">
+                                <img src="img/image-prova-1.jpg" alt="Avatar" class="admin-card__image">
+                                <figcaption class="admin-card__caption u-center-text">Founder</figcaption>
+                            </figure>
+                            <!-- ------------- image ------------- -->
+
+                            <!-- ------------- content ------------- -->
+                            <div class="admin-card__content u-center-text">
+                                <p class="admin-card__name">Matteo Giuntoni</p>
+                                <hr>
+                                <p class="admin-card__intro">Programmatore web, addetto al database e beckend</p>
+                            </div>
+                            <div class="admin-card__link">
+                                <svg class="admin-card__icon">
+                                    <use xlink:href="img/symbol-defs.svg#icon-instagram"></use>
+                                </svg>
+                                <a href="#" class="admin-card__nickname">matte_giu</a>
+                            </div>
+                            <!-- ------------- content ------------- -->
+                        </div>
+                        <!-- ------------- ADMIN CARD ------------- -->
+
+                        <!-- ------------- ADMIN CARD ------------- -->
+                        <div class="admin-card admin-card--large admin-card--yellow">
+                            <!-- ------------- image ------------- -->
+                            <figure class="admin-card__avatar">
+                                <img src="img/image-prova-1.jpg" alt="Avatar" class="admin-card__image">
+                                <figcaption class="admin-card__caption u-center-text">Founder</figcaption>
+                            </figure>
+                            <!-- ------------- image ------------- -->
+
+                            <!-- ------------- content ------------- -->
+                            <div class="admin-card__content u-center-text">
+                                <p class="admin-card__name">Matteo Giuntoni</p>
+                                <hr>
+                                <p class="admin-card__intro">Programmatore web, addetto al database e beckend</p>
+                            </div>
+                            <div class="admin-card__link">
+                                <svg class="admin-card__icon">
+                                    <use xlink:href="img/symbol-defs.svg#icon-instagram"></use>
+                                </svg>
+                                <a href="#" class="admin-card__nickname">matte_giu</a>
+                            </div>
+                            <!-- ------------- content ------------- -->
+                        </div>
+                        <!-- ------------- ADMIN CARD ------------- -->
+                    </div>
+                                            
+                    <div class="button-group button-group--center u-margin-bottom-medium">
+                        <div class="button-text button-text--center">
+                            <button class="button-text__btn button-text__btn--large">
+                            Vedi di piu su di noi
+                            </button>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="section-team__background section-team__background--2">&nbsp;</div>
+                </section>
+
+                <section class="section-goals">
+                    <div class="heading-primary heading-primary--blue u-margin-bottom-large">
+                        <h1 class="heading-primary__title u-center-text">
+                            <span class="heading-primary__title--sub">I nostri<br></span>
+                            <span class="heading-primary__title--main">Obbiettivi</span>
+                        </h1>
+                        <p class="heading-primary__text heading-primary__text--large u-center-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, delectus voluptates. 
+                            Praesentium nisi fugit doloremque. Dolorum facilis, voluptate commodi veniam natus at 
+                            expedita laudantium repellat quisquam ullam, dolor sed laboriosam!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, delectus voluptates. 
+                            Praesentium nisi fugit doloremque. Dolorum facilis, voluptate commodi veniam natus at 
+                            expedita laudantium repellat quisquam ullam, dolor sed laboriosam!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, tetur adipisicing elit. Harum,
+                            Dolorum facilis, voluptate commodi veniam natus at 
+                    </div>
+                    <ul class="list">
+                        <li class="list__item">
+                            <img src="img/rocket.png" alt="Rocket" class="list__logo">
+                            <p class="list__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Similique quidem consequatur quasi tempore nisi, numquam ipsam, 
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <img src="img/rocket.png" alt="Rocket" class="list__logo">
+                            <p class="list__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Similique quidem consequatur quasi tempore nisi, numquam ipsam,
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <img src="img/rocket.png" alt="Rocket" class="list__logo">
+                            <p class="list__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Similique quidem consequatur quasi tempore nisi, numquam ipsam,
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <img src="img/rocket.png" alt="Rocket" class="list__logo">
+                            <p class="list__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Similique quidem consequatur quasi tempore nisi, numquam ipsam,
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <img src="img/rocket.png" alt="Rocket" class="list__logo">
+                            <p class="list__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Similique quidem consequatur quasi tempore nisi, numquam ipsam,
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <img src="img/rocket.png" alt="Rocket" class="list__logo">
+                            <p class="list__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Similique quidem consequatur quasi tempore nisi, numquam ipsam,
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <img src="img/rocket.png" alt="Rocket" class="list__logo">
+                            <p class="list__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Similique quidem consequatur quasi tempore nisi, numquam ipsam, 5
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <img src="img/rocket.png" alt="Rocket" class="list__logo">
+                            <p class="list__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Similique quidem consequatur quasi tempore nisi, numquam ipsam, 5
+                            </p>
+                        </li>
+                    </ul>
+                </section>
+                
             </main>
 
-
             <!-- ---------------- FOOTER (FOOTER) ---------------- -->
-            <footer class="footer">
+            <footer class="footer u-margin-top-xxxlarge">
                 <div class="button-group">
                     <button class="button-round button-round--shadow 
                     button-round--ultra button-round--yellow">Scarica subito la nostra App</button>

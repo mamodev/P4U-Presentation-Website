@@ -77,6 +77,10 @@ body {
         &--large {
             width: 75%;
         }
+
+        &--xlarge {
+            width: 85%;
+        }
     }
 }
 
@@ -158,10 +162,6 @@ body {
 
     @include respond(tab-land) {
         font-size: $xsmall-title-font-size;
-    }
-
-    @include respond(tab-land) {
-        font-size: $normal-title-font-size;
     }
 
     &--yellow {

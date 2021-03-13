@@ -1,6 +1,8 @@
 .home-main {
     margin-top: 100rem;
 
+    @include respond(big-desktop) {margin-top: 110rem;}
+
     @include respond(desktop) {margin-top: 105rem;}
 
     @include respond(tab-land) {margin-top: 85rem;}
@@ -70,7 +72,7 @@
     width: 100%;
     height: 420rem;
     background-repeat: no-repeat;
-    background-image: url(../img/SVG/backgroundN1.svg);
+    background-image: url(../img/background/backgroundN1.svg);
     background-size: cover;
     overflow: hidden;
     padding: 0rem {top: 25rem};
@@ -78,7 +80,7 @@
 
     @include respond(tab-port) {
         display: none;
-        background-image: url(../img/SVG/backgroundN1-small.svg);
+        background-image: url(../img/background/backgroundN1-small.svg);
         height: 480rem;
         transform: translateY(-10rem);
     }

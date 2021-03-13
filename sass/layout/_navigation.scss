@@ -217,6 +217,7 @@
         }
 
         @include respond(phone) {padding: 1.5rem 3rem}
+
     }
 
     &__item:hover {
@@ -225,9 +226,7 @@
         transform: scale(1.1);
     }
 
-    &__item:hover > &__link {
-        color: $color-white;
-    }
+    &__item:hover > &__link {color: $color-white;}
 
     &__item::before {
         content: "";
@@ -244,7 +243,8 @@
                     background-color .1s;
     }
 
-    &__item:hover::before {
+    &__item:hover::before,
+    &__item--active::before {
         transform: scaleY(1);
         width: 100%;
     }
@@ -280,6 +280,8 @@
             }
         }
     }
+
+    &__item--active > &__link {color: $color-white;}
 
     &__list + .button-group button {
         @include respond(tab-port) {
