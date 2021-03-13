@@ -60,11 +60,23 @@
         &--1 {
             background-image: url(../img/background/backgroundN6-1.png);
             top: -20rem;
+
+            @include respond(tab-land) 
+            {background-image: url(../img/background/backgroundN6-1-small.png);}
+
+            @include respond(tab-port) 
+            {background-image: url(../img/background/backgroundN6-1-xsmall.png);}
         }
 
         &--2 {
             background-image: url(../img/background/backgroundN6-2.png);
             bottom: -10rem;
+
+            @include respond(tab-land) 
+            {background-image: url(../img/background/backgroundN6-2-small.png);}
+
+            @include respond(tab-port) 
+            {background-image: url(../img/background/backgroundN6-2-xsmall.png);}
         }
     }
 }

@@ -1024,6 +1024,10 @@ body {
       border: 3px solid red; }
   .form__input::-webkit-input-placeholder {
     color: #4E5169; }
+  .form__input--correct {
+    border: 3px solid green; }
+  .form__input--invalid {
+    border: 3px solid red; }
 
 .form__label {
   font-size: 1.5rem;
@@ -1945,11 +1949,11 @@ body {
     .button-text__btn--normal {
       padding: 1rem;
       font-size: 2.2rem;
-      font-weight: 100; }
+      font-weight: 400; }
     .button-text__btn--large {
       padding: 1rem;
       font-size: 2.6rem;
-      font-weight: 100; }
+      font-weight: 400; }
       @media only screen and (max-width: 31.25em) {
         .button-text__btn--large {
           font-size: 1.7rem; } }
@@ -2212,6 +2216,18 @@ body {
     .section-team__background--1 {
       background-image: url(../img/background/backgroundN6-1.png);
       top: -20rem; }
+      @media only screen and (max-width: 81.25em) {
+        .section-team__background--1 {
+          background-image: url(../img/background/backgroundN6-1-small.png); } }
+      @media only screen and (max-width: 62.5em) {
+        .section-team__background--1 {
+          background-image: url(../img/background/backgroundN6-1-xsmall.png); } }
     .section-team__background--2 {
       background-image: url(../img/background/backgroundN6-2.png);
       bottom: -10rem; }
+      @media only screen and (max-width: 81.25em) {
+        .section-team__background--2 {
+          background-image: url(../img/background/backgroundN6-2-small.png); } }
+      @media only screen and (max-width: 62.5em) {
+        .section-team__background--2 {
+          background-image: url(../img/background/backgroundN6-2-xsmall.png); } }

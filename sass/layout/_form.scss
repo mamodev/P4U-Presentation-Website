@@ -42,6 +42,14 @@
         &::-webkit-input-placeholder {
             color: $color-primary-one-1;
         }
+
+        &--correct {
+            border: 3px solid green;
+        }
+
+        &--invalid {
+            border: 3px solid red;
+        }
     }
 
     &__label {

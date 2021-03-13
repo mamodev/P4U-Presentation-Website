@@ -71,15 +71,15 @@
                 Porta la <span class="header__title--right">tua idea</span><br>
                 In alto<br><span class="header__title--left">insieme</span> a noi
             </h1>
-            <button class="button-round button-round--shadow 
+            <button onclick="location.href='#section-service'" class="button-round button-round--shadow 
             button-round--ultra button-round--yellow">Scopri altre funzionalità</button>
         </div>
     </header>
     <!-- ---------------- HEADER (HEADER) ---------------- -->
  
-    <main  class="home-main">
+    <main class="home-main">
         <!-- ---------------- SECTION SERVICE (SERVICE) ---------------- -->
-        <section class="section-service u-margin-bottom-xlarge">
+        <section id="section-service" class="section-service u-margin-bottom-xlarge">
             
             <!-- ------------- Section title ------------- -->
             <div class="heading-secondary u-center-text u-margin-bottom-big">
@@ -90,7 +90,7 @@
 
             <div class="section-service__group u-margin-top-large">
                 <!-- ------------- SERVICE ------------- -->
-                <div class="service">
+                <div  class="service" onclick="location.href='#search_person'">
                     <!-- ------------- service title ------------- -->
                     <div class="service__title u-center-text">
                         <h2 class="heading-tertiary">Cerca Persone</h2>
@@ -111,7 +111,7 @@
                 <!-- ------------- SERVICE ------------- -->
 
                 <!-- ------------- SERVICE ------------- -->
-                <div class="service">
+                <div class="service" onclick="location.href='#search_project'">
                     <!-- ------------- service title ------------- -->
                     <div class="service__title u-center-text">
                         <h2 class="heading-tertiary">Cerca Progetti</h2>
@@ -132,7 +132,7 @@
                 <!-- ------------- SERVICE ------------- -->
 
                 <!-- ------------- SERVICE ------------- -->
-                <div class="service">
+                <div class="service" onclick="location.href='#project_managment'">
                     <!-- ------------- service title ------------- -->
                     <div class="service__title u-center-text">
                         <h2 class="heading-tertiary">Gestione Progetti</h2>
@@ -153,7 +153,7 @@
                 <!-- ------------- SERVICE ------------- -->
 
                 <!-- ------------- SERVICE ------------- -->
-                <div class="service">
+                <div class="service" onclick="location.href='#article'">
                     <!-- ------------- service title ------------- -->
                     <div class="service__title u-center-text">
                         <h2 class="heading-tertiary">Articoli e News</h2>
@@ -244,7 +244,7 @@
                 <!-- ------------- OVERVIEW-ITEM ------------- -->
 
                 <!-- ------------- OVERVIEW-ITEM ------------- -->
-                <div id="search_person" class="overview-item overview-item--reverse animated-left">
+                <div id="search_project" class="overview-item overview-item--reverse animated-left">
                     <!-- ------------- OverView video with background ------------- -->
                     <div class="overview-item__presentation">
                         <div class="overview-item__phone">
@@ -307,7 +307,7 @@
                 <!-- ------------- OVERVIEW-ITEM ------------- -->
 
                 <!-- ------------- OVERVIEW-ITEM ------------- -->
-                <div id="search_person" class="overview-item animated-right">
+                <div id="project_managment" class="overview-item animated-right">
                     <!-- ------------- OverView video with background ------------- -->
                     <div class="overview-item__presentation">
                         <div class="overview-item__phone">
@@ -370,7 +370,7 @@
                 <!-- ------------- OVERVIEW-ITEM ------------- -->
 
                 <!-- ------------- OVERVIEW-ITEM ------------- -->
-                <div id="search_person" class="overview-item overview-item--reverse animated-left">
+                <div id="article" class="overview-item overview-item--reverse animated-left">
                     <!-- ------------- OverView video with background ------------- -->
                     <div class="overview-item__presentation">
                         <div class="overview-item__phone">
@@ -434,7 +434,8 @@
             </div>
 
             <div class="button-group u-margin-top-large">
-                <button class="button-round button-round--shadow button-round--big button-round--yellow">Scopri altre funzionalità</button>
+                <button onclick="location.href='#section-service'"
+                class="button-round button-round--shadow button-round--big button-round--yellow">Scopri altre funzionalità</button>
             </div>
         </section>
         <!-- ---------------- SECTION OVERVIEW (OVERVIEW-ITEM) ---------------- -->
@@ -640,9 +641,9 @@
 
             <div class="button-group button-group--center">
                 <div class="button-text button-text--center">
-                    <button class="button-text__btn button-text__btn--normal">
+                    <a href="about.html" class="button-text__btn button-text__btn--normal">
                     Vedi di piu su di noi
-                    </button>
+                    </a>
                     <hr>
                 </div>
             </div>
