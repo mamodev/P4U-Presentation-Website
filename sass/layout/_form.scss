@@ -29,6 +29,8 @@
 
         @include respond(tab-port) {width: 100%;}
 
+        &--full {width: 100%;}
+
         &:focus {
             outline: none;
             box-shadow: 0 1rem 2rem rgba($color-black, .1);

@@ -1016,6 +1016,8 @@ body {
   @media only screen and (max-width: 62.5em) {
     .form__input {
       width: 100%; } }
+  .form__input--full {
+    width: 100%; }
   .form__input:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -2231,3 +2233,47 @@ body {
       @media only screen and (max-width: 62.5em) {
         .section-team__background--2 {
           background-image: url(../img/background/backgroundN6-2-xsmall.png); } }
+
+.section-login {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10rem;
+  background-color: #FFF8E6;
+  border-radius: 5rem;
+  box-shadow: 0.2rem 1rem 4rem rgba(0, 0, 0, 0.4);
+  border: 1px solid #4E5169; }
+  @media only screen and (max-width: 81.25em) {
+    .section-login {
+      padding: 5rem; } }
+  @media only screen and (max-width: 62.5em) {
+    .section-login {
+      width: 75%; } }
+  @media only screen and (max-width: 31.25em) {
+    .section-login {
+      padding: 3rem;
+      width: 90%; } }
+
+.section-registration {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10rem 10rem;
+  background-color: #FFF8E6;
+  border-radius: 5rem;
+  box-shadow: 0.2rem 1rem 4rem rgba(0, 0, 0, 0.4);
+  border: 1px solid #4E5169; }
+  @media only screen and (max-width: 81.25em) {
+    .section-registration {
+      padding: 5rem; } }
+  @media only screen and (max-width: 62.5em) {
+    .section-registration {
+      width: 75%; } }
+  @media only screen and (max-width: 31.25em) {
+    .section-registration {
+      padding: 3rem;
+      width: 90%; } }
