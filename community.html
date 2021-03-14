@@ -196,12 +196,22 @@
                             <label for="password" class="form__label">Conferma Password</label>
                         </div>
 
-                        <div class="form__group">
-                            <svg class="form__icon">
-                                <use xlink:href="img/symbol-defs.svg#icon-person-outline"></use>
-                            </svg>
-                            <input type="text" placeholder="Username" id="username" class="form__input" required>
-                            <label for="username" class="form__label">Username</label>
+                        <div class="form__container">
+                            <div class="form__group--half">
+                                <svg class="form__icon">
+                                    <use xlink:href="img/symbol-defs.svg#icon-person-outline"></use>
+                                </svg>
+                                <input type="text" placeholder="Nome" id="first_name" class="form__input form__input--full" required>
+                                <label for="first_name" class="form__label">Nome</label>
+                            </div>
+    
+                            <div class="form__group--half">
+                                <svg class="form__icon">
+                                    <use xlink:href="img/symbol-defs.svg#icon-person-outline"></use>
+                                </svg>
+                                <input type="text" placeholder="Cognome" id="second_name" class="form__input form__input--full" required>
+                                <label for="second_name" class="form__label">Cognome</label>
+                            </div>
                         </div>
                     </form>
                     <div class="button-group button-group--left u-margin-top-xsmall">

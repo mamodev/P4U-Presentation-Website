@@ -18,7 +18,8 @@
 // ----------- BTN-TEXT ANIMATION AFTER CLICK ---------
 
 
-// ----------- BTN-TEXT ANIMATION AFTER CLICK ---------
+
+// ----------- ARROW ANIMATION ---------
 @keyframes upBottomArrow {
     0% {transform: translateY(-1rem);}
 
@@ -26,7 +27,8 @@
 
     100% {transform: translateY(-1rem);}
 }
-// ----------- BTN-TEXT ANIMATION AFTER CLICK ---------
+// ----------- ARROW ANIMATION ---------
+
 
 
 // ----------- ANIMATION MOVE FROM RIGHT TO LEFT ---------
@@ -94,7 +96,7 @@
 }
 
 .animated-bottom { 
-    animation: moveInBottom .5s ease-out .75s;
+    animation: moveInBottom .75s ease-out .2s;
     animation-fill-mode: backwards;
 }
 // ----------- ANIMATION MOVE FROM TOP TO BOTTOM ---------

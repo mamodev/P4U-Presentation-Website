@@ -13,7 +13,11 @@
     align-items: center;
     flex-wrap: wrap;
 
+    transition: all .2s;
+
     @include respond(phone) {width: 90%;}
+
+    &:hover {transform: scale(1.05);}
 
     &__checkbox {display: none;}
 

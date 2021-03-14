@@ -1,8 +1,23 @@
 .form {
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+
+        &--full {width: 100%;}
+    }
+
     &__group {
         position: relative;
         &:not(:last-child) {
             margin-bottom: 2rem;
+        }
+
+        &--half {
+            position: relative;
+            flex: 0 1 45%;
         }
     }
 
