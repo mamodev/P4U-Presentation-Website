@@ -173,7 +173,7 @@
             transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
         }
 
-        @include respond(phone) {top: 25rem;}
+        @include respond(phone) {top: 15rem;}
     }
 
     &__list {

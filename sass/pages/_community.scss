@@ -1,7 +1,7 @@
 .community-main {
     margin-top: 85rem;
 
-    @include respond(big-desktop) {margin-top: 100rem;}
+    @include respond(big-desktop) {margin-top: 120rem;}
 
     @include respond(desktop) {margin-top: 100rem;}
 

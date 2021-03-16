@@ -1,15 +1,16 @@
 .home-main {
     margin-top: 100rem;
 
-    @include respond(big-desktop) {margin-top: 110rem;}
+    @include respond(big-desktop) {margin-top: 130rem;}
 
     @include respond(desktop) {margin-top: 105rem;}
 
     @include respond(tab-land) {margin-top: 85rem;}
 
-    @include respond(tab-port) {margin-top: 115rem;}
+    @include respond(tab-port) {margin-top: 105rem;}
 
     @include respond(phone) {margin-top: 105rem;}
+
 }
 
 .section-service {
@@ -74,9 +75,9 @@
     background-repeat: no-repeat;
     background-image: url(../img/background/backgroundN1.svg);
     background-size: cover;
-    overflow: hidden;
     padding: 0rem {top: 25rem};
 
+    @include respond(big-desktop) {height: 560rem;}
 
     @include respond(tab-port) {
         display: none;

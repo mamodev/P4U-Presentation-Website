@@ -204,6 +204,8 @@
             font-size: 2.8rem;
         }
 
+        @include respond(big-desktop) {font-size: 3.5rem;}
+
         @include respond(tab-land) {width: 100%;}
 
         @include respond(tab-port) {font-size: 2rem;}
@@ -260,12 +262,13 @@
         font-size: 1.7rem;
         color: $color-primary-one-1;
 
-        @include respond(tab-land) {
-            font-size: 1.5rem;
-        }
+        @include respond(tab-land) {font-size: 1.5rem;}
 
-        @include respond(tab-port) {
-            font-size: 1.2rem;
+        @include respond(tab-port) {font-size: 1.2rem;}
+
+        @include respond(big-desktop) {
+            font-size: 2rem;
+            letter-spacing: 2px;
         }
     }
 

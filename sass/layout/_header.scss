@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
     background-size:cover;
 
-    height: 120vh;
+    height: 120rem;
     width: 100%;
 
     display: flex;
@@ -39,18 +39,23 @@
     }
 
     @include respond(tab-land) {
-        top: -25rem;
+        top: -20rem;
         justify-content: center;
-        height: 110vh;
+        height: 110rem;
     }
 
     @include respond(tab-port) {
         padding-top: 0rem;
-        height: 120vh;
+        height: 125rem;
         top: -15rem;
     }
 
-    @include respond(phone) {height: 90vh;}
+    @include respond(phone) {height: 105rem;}
+
+    @include respond(big-desktop) {
+        height: 150rem;
+        top: -20rem;
+    }
 
     &__illustration {
         flex: 0 1 40%;
@@ -72,10 +77,17 @@
             transform: translateY(3.5rem);
         }
 
+        @include respond(big-desktop) {
+            width: 70rem;
+            height: 75rem;
+            transform: translateY(4.5rem);
+        }
+
         @include respond(tab-land) {
             width: 50rem;
             height: 55rem;
         }
+
     }
 
     &__content {
@@ -92,6 +104,10 @@
         @include respond(desktop) {
             flex: 0 1 60%;
             padding-right: 5rem;
+        }
+
+        @include respond(big-desktop) {
+            height: 75rem;
         }
 
         @include respond(tab-land) {
@@ -113,13 +129,18 @@
         height: 55rem;
         margin-top: 7rem;
 
+        @include respond(big-desktop) {
+            height: 65rem;
+            margin-top: 20rem;
+        }
+
         @include respond(desktop) {
-            height: 60rem;
+            height: 65rem;
             margin-top: 20rem;
         }
 
         @include respond(phone) {
-            height: 45rem;
+            height: 55rem;
             margin-top: 10rem;
         }
 
@@ -198,6 +219,11 @@
         @include respond(desktop) {
             font-size: 4.8rem;
             line-height: 7rem;
+        }
+
+        @include respond(big-desktop) {
+            font-size: 7.5rem;
+            line-height: 13rem;
         }
 
         @include respond(tab-land) {

@@ -13,10 +13,19 @@
         height: 140rem;
     }
 
+    @include respond(big-desktop) {
+        padding-top: calc(#{$height} - 80rem);
+        height: 130rem;
+    }
+
     &__logo-box {
         height: 20rem;
         width: 20rem;
         margin: auto{top: calc(#{$height} - 91rem);};
+
+        @include respond(big-desktop) {
+            margin: auto{top: calc(#{$height} - 80rem);};
+        }
 
         @include respond(tab-port) {
             height: 18rem;

@@ -6,6 +6,8 @@
         align-items: center;
         width: 90%;
 
+        @include respond(tab-port) {width: 100%;}
+
         &--full {width: 100%;}
     }
 
@@ -42,7 +44,11 @@
         width: 90%;
         display: block;
 
-        @include respond(tab-port) {width: 100%;}
+        @include respond(tab-port) {
+            width: 100%;
+
+            padding: 2.2rem 2rem 2.2rem 6rem;
+        }
 
         &--full {width: 100%;}
 
