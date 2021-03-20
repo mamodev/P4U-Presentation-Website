@@ -2107,14 +2107,15 @@ body {
   @media only screen and (max-width: 62.5em) {
     .section-form__form {
       width: 80%;
-      padding: 5rem; } }
-  @media only screen and (max-width: 31.25em) {
-    .section-form__form {
-      width: 95%;
       padding: 2rem;
         padding-top: 5rem; }
       .section-form__form h3 {
         text-align: center; } }
+  @media only screen and (max-width: 31.25em) {
+    .section-form__form {
+      width: 95%;
+      padding: 2rem;
+        padding-top: 5rem; } }
 
 .section-form__figure {
   position: absolute;

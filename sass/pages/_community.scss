@@ -40,14 +40,14 @@
 
         @include respond(tab-port) {
             width: 80%;
-            padding: 5rem;
+            padding: 2rem {top:5rem};
+
+            h3 {text-align: center;}
         }
 
         @include respond(phone) {
             width: 95%;
             padding: 2rem {top: 5rem;};
-
-            h3 {text-align: center;}
         }
 
     }
