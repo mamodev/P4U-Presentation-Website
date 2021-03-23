@@ -214,6 +214,55 @@ body {
   .heading-tertiary--yellow {
     color: #F8F4D9; }
 
+.paragraph {
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  line-height: 3rem;
+  font-weight: 400; }
+  .paragraph--yellow {
+    color: #F8F4D9; }
+
+.link:link, .link:visited {
+  color: #F8F4D9;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all .2s;
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  letter-spacing: 2.5px; }
+
+.link--small:link, .link--small:visited {
+  font-size: 1.7rem; }
+  @media only screen and (max-width: 62.5em) {
+    .link--small:link, .link--small:visited {
+      font-size: 1.4rem; } }
+
+.link--small:hover, .link--small:active {
+  transform: rotate(5deg) scale(1.2); }
+
+.link--normal:link, .link--normal:visited {
+  font-size: 2.1rem; }
+  @media only screen and (max-width: 62.5em) {
+    .link--normal:link, .link--normal:visited {
+      font-size: 1.8rem; } }
+
+.link--normal:hover, .link--normal:active {
+  transform: rotate(5deg) scale(1.3); }
+
+.link--big:link, .link--big:visited {
+  font-size: 2.5rem; }
+  @media only screen and (max-width: 62.5em) {
+    .link--big:link, .link--big:visited {
+      font-size: 2rem; } }
+
+.link--big:hover, .link--big:active {
+  transform: rotate(5deg) scale(1.4); }
+
+.link:hover, .link:active {
+  color: #4E5169;
+  background-color: #F8F4D9;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4); }
+
 .u-center-text {
   text-align: center !important; }
 
@@ -686,23 +735,6 @@ body {
         flex-wrap: nowrap;
         flex-direction: column;
         align-items: center; } }
-  .footer__link:link, .footer__link:visited {
-    color: #F8F4D9;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 2.1rem;
-    letter-spacing: 2.5px;
-    transition: all .2s;
-    display: inline-block;
-    padding: 1rem 1.5rem; }
-    @media only screen and (max-width: 62.5em) {
-      .footer__link:link, .footer__link:visited {
-        font-size: 1.8rem; } }
-  .footer__link:hover, .footer__link:active {
-    color: #4E5169;
-    background-color: #F8F4D9;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
-    transform: rotate(5deg) scale(1.3); }
   .footer__social {
     display: flex;
     justify-content: space-around;
@@ -792,7 +824,8 @@ body {
       background-color: transparent;
       box-shadow: none;
       padding: 0;
-      margin-top: 0rem; } }
+      margin-top: 0rem;
+      width: auto; } }
   .navigation__checkbox {
     display: none; }
   .navigation__button {
@@ -822,7 +855,7 @@ body {
     width: 6rem;
     border-radius: 50%;
     background-color: #F8F4D9;
-    position: absolute;
+    position: fixed;
     top: 3rem;
     right: 4rem;
     z-index: 4000;
@@ -832,8 +865,8 @@ body {
         display: block; } }
     @media only screen and (max-width: 31.25em) {
       .navigation__background {
-        top: 2rem;
-        right: 2rem; } }
+        top: 2.5rem;
+        right: 3rem; } }
   .navigation__icon {
     display: none;
     position: relative;
@@ -898,18 +931,19 @@ body {
         flex: 0 1 75%; } }
     @media only screen and (max-width: 62.5em) {
       .navigation__nav {
-        visibility: hidden;
+        width: 0;
         opacity: 0;
         justify-content: space-between;
         flex-direction: column;
-        position: absolute;
+        position: fixed;
         top: 20rem;
-        right: 50%;
+        left: -20rem;
+        height: 50rem;
         z-index: 5000;
         transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); } }
     @media only screen and (max-width: 31.25em) {
       .navigation__nav {
-        top: 15rem; } }
+        top: 8rem; } }
   .navigation__list {
     display: flex;
     justify-content: space-around;
@@ -1021,10 +1055,9 @@ body {
   .navigation__checkbox:checked ~ .navigation__background {
     transform: scale(80); }
   .navigation__checkbox:checked ~ .navigation__nav {
-    visibility: visible;
     opacity: 1;
     width: 100%;
-    transform: translateX(50%); }
+    transform: translateX(20rem); }
 
 .form__container {
   display: flex;
@@ -1450,7 +1483,7 @@ body {
     list-style: none; }
   .overview-item__item {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     margin-top: 4rem;
     width: 100%; }
@@ -1693,7 +1726,7 @@ body {
   .list__item {
     flex: 0 0 48%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     margin-bottom: 5rem; }
     @media only screen and (max-width: 31.25em) {
@@ -1923,7 +1956,8 @@ body {
 .button-round--ultra {
   padding: 2.5rem 6rem;
   font-size: 3rem;
-  font-weight: 600; }
+  font-weight: 600;
+  letter-spacing: 2px; }
   @media only screen and (max-width: 106.25em) {
     .button-round--ultra {
       padding: 2.5rem 5rem;
