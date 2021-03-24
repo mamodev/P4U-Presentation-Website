@@ -201,25 +201,25 @@
     }
 
     &__item {
-        padding: 1.5rem 3.2rem;
+        padding: 1.5rem 0rem;
         position: relative;
         cursor: pointer;
         transition: all .2s;
         letter-spacing: .3rem;
         text-align: center;
 
-        @include respond(desktop) {padding: 1rem 1.5rem;}
+        @include respond(desktop) {padding: 1rem 0rem;}
 
         @include respond(tab-land) {letter-spacing: 0;}
 
         @include respond(tab-port) {
             letter-spacing: .3rem;
-            padding: 2.3rem 4rem;
+            padding: 2.3rem 0rem;
 
             &:not(:last-child){margin-bottom: 1.5rem;}
         }
 
-        @include respond(phone) {padding: 1.5rem 3rem}
+        @include respond(phone) {padding: 1.5rem 0rem}
 
     }
 
@@ -246,8 +246,7 @@
                     background-color .1s;
     }
 
-    &__item:hover::before,
-    &__item--active::before {
+    &__item:hover::before {
         transform: scaleY(1);
         width: 100%;
     }
@@ -263,9 +262,11 @@
             color: $color-primary-one-1;
             z-index: 1000;
             transition: all .3s;
+            padding: 1.5rem 3.2rem;
 
             @include respond(desktop) {
                 font-size: $small-button-font-size;
+                padding: 1rem 1.5rem;
             }
 
             @include respond(tab-land) {
@@ -275,11 +276,21 @@
             @include respond(tab-port) {
                 font-size: $big-button-font-size;
                 font-weight: 600;
+                padding: 2.3rem 4rem;
             }
 
             @include respond(phone) {
                 font-size: $normal-button-font-size ;
                 font-weight: 600;
+                padding: 1.5rem 3rem
+            }
+        }
+
+        &--active {
+            &:link,
+            &:visited {
+                background-color: $color-secondary-two-1;
+                color: $color-white;
             }
         }
     }

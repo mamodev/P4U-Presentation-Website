@@ -67,6 +67,8 @@
         }
     }
 
+    &--reverse &__item {justify-content: flex-start;}
+
     &--reverse &__list {width: 90%;}
 
     &--reverse &__overlay {
