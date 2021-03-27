@@ -79,14 +79,7 @@
 
     @include respond(big-desktop) {height: 560rem;}
 
-    @include respond(tab-port) {
-        display: none;
-        background-image: url(../img/background/backgroundN1-small.svg);
-        height: 480rem;
-        transform: translateY(-10rem);
-    }
-
-    @include respond(phone) {transform: translateY(-25rem);}
+    @include respond(tab-port) {display: none;}
 
     &__list {
         height: 87%;
@@ -94,13 +87,12 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-
-        @include respond(tab-port) {height: 90%;}
     }
 }
 
 .section-faq {
     margin-bottom: 18rem;
+
     @include respond(phone) {
         margin-bottom: 0rem;
         transform: translateY(-20rem);

@@ -84,8 +84,8 @@
         }
 
         @include respond(tab-land) {
-            width: 50rem;
-            height: 55rem;
+            width: 47rem;
+            height: 52rem;
         }
 
     }
@@ -95,6 +95,7 @@
         flex-direction: column;
         align-items: flex-end;
         justify-content: space-around;
+        padding-right: 4rem;
     }
 
     &--1 &__content {
@@ -103,7 +104,7 @@
 
         @include respond(desktop) {
             flex: 0 1 60%;
-            padding-right: 5rem;
+            padding-right: 8rem;
         }
 
         @include respond(big-desktop) {

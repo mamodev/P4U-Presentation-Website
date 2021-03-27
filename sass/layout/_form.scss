@@ -8,6 +8,8 @@
 
         @include respond(tab-port) {width: 100%;}
 
+        @include respond(phone) {flex-direction: column;}
+
         &--full {width: 100%;}
     }
 
@@ -20,6 +22,8 @@
         &--half {
             position: relative;
             flex: 0 1 45%;
+
+            @include respond(phone) {width: 100%;}
         }
     }
 
@@ -37,7 +41,7 @@
         letter-spacing: 1.5px;
         font-family: inherit;
         color: inherit;
-        padding: 2.2rem 7rem;
+        padding: 2.2rem 2rem 2.2rem 7rem;
         border-radius: 3rem;
         border: 1px solid $color-primary-one-1;
         background-color: rgba($color-white, 1);

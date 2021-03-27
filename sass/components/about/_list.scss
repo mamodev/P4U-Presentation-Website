@@ -2,7 +2,7 @@
     list-style: none;
     width: 100%;
     padding: 7rem 15rem 3rem 15rem;
-    background-color: $color-white;
+    background-color: $color-background-3;
     box-shadow: $shadow-xlarge-black;
 
     display: flex;
@@ -34,6 +34,11 @@
         align-items: center;
         margin-bottom: 5rem;
 
+        background-color: $color-white;
+        padding: 1rem 2rem;
+        border: 0.2rem solid $color-primary-one-1;
+        border-radius: 2rem;
+
         @include respond(phone) {
             margin-bottom: 3rem;
         }
@@ -45,7 +50,7 @@
         border-radius: 50%;
         padding: .7rem;
         border: 2px solid $color-primary-one-1;
-        background-color: $color-background-2;
+        background-color: $color-background-3;
 
         @include respond(tab-port) {
             width: 4rem;
