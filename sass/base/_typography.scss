@@ -201,6 +201,32 @@ body {
         letter-spacing: 2.5px;
     }
 
+    &--yellow {
+        &:link,
+        &:visited{
+            color: $color-primary-two-1;
+        }
+
+        &:hover,
+        &:active {
+            color: $color-primary-one-1;
+            background-color: $color-primary-two-1;
+        }
+    }
+
+    &--blue {
+        &:link,
+        &:visited{
+            color: $color-primary-one-1;
+        }
+
+        &:hover,
+        &:active {
+            color: $color-primary-two-1;
+            background-color: $color-primary-one-1;
+        }
+    }
+
     &--small {
         &:link,
         &:visited{

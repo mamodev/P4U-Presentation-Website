@@ -230,6 +230,20 @@ body {
   padding: 1rem 1.5rem;
   letter-spacing: 2.5px; }
 
+.link--yellow:link, .link--yellow:visited {
+  color: #F8F4D9; }
+
+.link--yellow:hover, .link--yellow:active {
+  color: #4E5169;
+  background-color: #F8F4D9; }
+
+.link--blue:link, .link--blue:visited {
+  color: #4E5169; }
+
+.link--blue:hover, .link--blue:active {
+  color: #F8F4D9;
+  background-color: #4E5169; }
+
 .link--small:link, .link--small:visited {
   font-size: 1.7rem; }
   @media only screen and (max-width: 62.5em) {
@@ -1089,7 +1103,9 @@ body {
     flex: 0 1 45%; }
     @media only screen and (max-width: 31.25em) {
       .form__group--half {
-        width: 100%; } }
+        width: 100%; }
+        .form__group--half:not(:last-child) {
+          margin-bottom: 2rem; } }
 
 .form__icon {
   position: absolute;
