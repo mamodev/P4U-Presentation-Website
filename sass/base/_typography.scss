@@ -192,7 +192,6 @@ body {
 .link {
     &:link, 
     &:visited {
-        color: $color-primary-two-1;
         text-decoration: none;
         text-transform: uppercase;
         transition: all .2s;
@@ -271,8 +270,6 @@ body {
 
     &:hover,
     &:active {
-        color: $color-primary-one-1;
-        background-color: $color-primary-two-1;
         box-shadow: 0 1rem 2rem rgba($color-black, .4);
     }
 }
