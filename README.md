@@ -7,3 +7,12 @@ In questa repository è contenuto tutto lo stilying del sito, realizzato tramite
 conversione in css dei file, oppurtunamente formattata per l'utilizzo in prod. E' inoltre possibile visualizare lo styiling del sito aprendo i file html presenti
 i quali sono già linkati ai file css.
 
+## Site image
+
+Homepage header           |  Hompage teams
+:-------------------------:|:-------------------------:
+![](https://github.com/bigmat18/P4U-Presentation-Website/blob/master/.md/home-1.png)  | ![]
+(https://github.com/bigmat18/P4U-Presentation-Website/blob/master/.md/home-2.png)
+
+
+
