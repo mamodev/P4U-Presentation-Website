@@ -11,8 +11,16 @@ i quali sono già linkati ai file css.
 
 Homepage header           |  Hompage teams
 :-------------------------:|:-------------------------:
-![](https://github.com/bigmat18/P4U-Presentation-Website/blob/master/.md/home-1.png)  | ![]
-(https://github.com/bigmat18/P4U-Presentation-Website/blob/master/.md/home-2.png)
+![](https://github.com/bigmat18/P4U-Presentation-Website/blob/master/.md/home-1.png)  | ![](https://github.com/bigmat18/P4U-Presentation-Website/blob/master/.md/home-2.png)
+
+Aboud header           |  About teams
+:-------------------------:|:-------------------------:
+![](https://github.com/bigmat18/P4U-Presentation-Website/blob/master/.md/about-1.png)  | ![](https://github.com/bigmat18/P4U-Presentation-Website/blob/master/.md/about-2.png)
+
+Community header           |  Community idee
+:-------------------------:|:-------------------------:
+![](https://github.com/bigmat18/P4U-Presentation-Website/blob/master/.md/community-1.png)  | ![](https://github.com/bigmat18/P4U-Presentation-Website/blob/master/.md/community-2.png)
+
 
 
 
